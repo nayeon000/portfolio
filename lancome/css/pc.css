@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+/* ------------ pc -------------- */
+#container {
+  overflow: hidden;
+}
+
+header .nav {
+  display: block;
+}
+
+header .nav ul li a:hover {
+  color: #d51b51;
+}
+
+#menu_bar {
+  display: none;
+}
+
+#content ul li {
+  margin: 5vw;
+}
+
+/* content2   위치바꾸기  */
+
+#content2 .box img {
+  width: 40%;
+  margin-left: 150px;
+}
+
+
+#content2 .box .txt {
+  margin-left: 200px;
+}
+
+#content2 .box .txt h2 {
+  font-size: 64px;
+}
+
+/* New product  위치바꾸기  */
+#New_Product .boxs img {
+  width: 40%;
+}
+
+#instagram ul li:nth-child(even) {
+  display: block;
+}

@@ -1,15 +1,30 @@
 @charset "utf-8";
 
-/* ------------ pc -------------- */
-#container {
-  overflow: hidden;
+/* nav */
+
+nav #gnb {
+  display: flex;
+  margin-right: 250px;
 }
 
-header .nav {
-  display: block;
+nav #gnb li a {
+  margin: 0 30px;
 }
 
-header .nav ul li a:hover {
+nav #gnb li a:hover {
+  color: #d51b51;
+}
+
+nav #registry {
+  display: flex;
+  margin-right: 30px;
+}
+
+nav #registry li a {
+  margin: 0 5px;
+}
+
+nav #registry li a:hover {
   color: #d51b51;
 }
 
@@ -17,31 +32,163 @@ header .nav ul li a:hover {
   display: none;
 }
 
-#content ul li {
-  margin: 5vw;
+/*********** content ************/
+.ghost_btn:hover {
+  background-color: #d51b51;
+  color: #fff;
 }
 
-/* content2   위치바꾸기  */
 
-#content2 .box img {
-  width: 40%;
+#content ul {
+  width: 70vw;
+}
+
+#content ul li {
+  height: 65vh;
+}
+
+#content img {
+  margin: 50px 85px 0;
+}
+
+#content {
+
+  transform: translateY(100px);
+  transition: .4s;
+}
+
+#content ul li a:hover img {
+  opacity: 1;
+  transform: translateY(-20px);
+}
+
+/*********** poundation , mascara ************/
+#poundation {
+  margin-top: 250px;
+}
+
+#poundation img,
+#mascara img {
+  width: 80%;
+}
+
+#poundation img,
+#mascara img {
+  margin-left: 100px;
+}
+
+
+#poundation .txt,
+#mascara .txt {
+  width: 30vw;
+  padding: 100px 200px 0;
+}
+
+.box .txt h2 {
+  font-size: 40px;
+}
+
+.box .txt p {
+  font-size: 20px;
+}
+
+/*********** rewards ************/
+#rewards {
+  padding: 0 100px;
+}
+
+#rewards h2 {
+  font-size: 42px;
+}
+
+#rewards p {
+  font-size: 20px;
+}
+
+/*********** poundation , mascara ************/
+#clarifique .title {
+  margin: 50px 0;
+}
+
+#clarifique .txt p,
+#genifique .txt p {
+  font-size: 20px;
+}
+
+#clarifique .txt h4,
+#genifique .txt h4 {
+  font-size: 18px;
+}
+
+#clarifique .txt,
+#genifique .txt {
+  width: 25vw;
+  padding: 120px 0;
+}
+
+#genifique .img {
   margin-left: 150px;
 }
 
-
-#content2 .box .txt {
-  margin-left: 200px;
+#genifique .img a img,
+#clarifique .img a img {
+  width: 80%;
 }
 
-#content2 .box .txt h2 {
-  font-size: 64px;
+#clarifique .txt {
+  margin-left: 150px;
 }
 
-/* New product  위치바꾸기  */
-#New_Product .boxs img {
-  width: 40%;
+#genifique .txt {
+  margin-left: 100px;
 }
 
+/*********** product ************/
+#product h2 {
+  margin-bottom: 100px;
+}
+
+#product ul {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+#product ul li {
+  margin-bottom: 40px;
+}
+
+#product ul li:nth-child(2),
+#product ul li:nth-child(3) {
+  display: block;
+}
+
+#product ul li .img {
+  width: 350px;
+  height: 350px;
+}
+
+
+
+/*********** instagram ************/
 #instagram ul li:nth-child(even) {
   display: block;
+}
+
+/* ---- footer ---- */
+#contact ul li {
+  margin-right: 160px;
+}
+
+#contact .portfolio {
+  margin-left: 700px;
+}
+
+/* video */
+#video {
+  display: block;
+  text-align: center;
+}
+
+#video .title {
+  margin-top: 100px;
+  margin-bottom: 50px;
 }

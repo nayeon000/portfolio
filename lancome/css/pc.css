@@ -146,13 +146,11 @@ nav #registry li a:hover {
   width: 80%;
 }
 
-#clarifique .txt {
-  margin-left: 150px;
+#clarifique .txt,
+#genifique .txt {
+  padding: 80px;
 }
 
-#genifique .txt {
-  margin-left: 100px;
-}
 
 /*********** product ************/
 #product {

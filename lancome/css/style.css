@@ -349,12 +349,12 @@ nav #menu_bar a img {
 }
 
 #product ul li img {
-  width: 90%;
+  width: 85%;
 }
 
 #product ul li p {
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 17px;
   line-height: 1.8;
   margin: 30px 0 70px;
 }
@@ -447,35 +447,26 @@ nav #menu_bar a img {
 /* ---- footer ---- */
 
 #contact {
-  /* width: 100%; */
   height: 400px;
   background-color: #000;
   color: rgb(243, 243, 243);
   padding: 80px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 #contact h1 {
   padding: 0 12px 50px;
 }
 
-#contact ul {
-  display: flex;
-  flex-direction: column;
-}
-
-#contact ul li {
-  margin-bottom: 100px;
-}
-
-#contact ul li h3 {
+#contact h3 {
   font-size: 14px;
   font-weight: 500;
   margin-bottom: 25px;
 }
 
-#contact ul li p {
+#contact p {
   font-size: 15px;
   line-height: 1.5;
   font-weight: 300;
@@ -512,6 +503,7 @@ nav #menu_bar a img {
 
 /* .up, .kakao */
 .Up {
+  overflow: hidden;
   width: 45px;
   height: 45px;
   background: rgba(0, 0, 0, .5) url(../images/arrow_up.svg) no-repeat 50%;

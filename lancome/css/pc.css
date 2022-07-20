@@ -155,16 +155,25 @@ nav #registry li a:hover {
 }
 
 /*********** product ************/
+#product {
+  overflow: hidden;
+}
+
 #product h2 {
   margin-bottom: 100px;
 }
 
 #product ul {
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 380px);
+  justify-content: center;
 }
 
 #product ul li {
   margin-bottom: 40px;
+}
+
+#product ul li p {
+  font-size: 18px;
 }
 
 #product ul li:nth-child(2),
@@ -176,8 +185,6 @@ nav #registry li a:hover {
   width: 350px;
   height: 350px;
 }
-
-
 
 /*********** instagram ************/
 #instagram ul li:nth-child(even) {

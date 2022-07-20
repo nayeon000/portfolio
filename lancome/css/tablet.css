@@ -48,13 +48,21 @@
 }
 
 /*********** product ************/
+
+
 #product ul {
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 250px);
+  justify-content: space-around;
+}
+
+#product ul li img {
+  overflow: hidden;
+  width: 80%;
 }
 
 #product ul li .img {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
 }
 
 /*********** footer ************/
@@ -63,13 +71,6 @@
   flex-direction: row;
 }
 
-#contact ul {
-  flex-direction: row;
-}
-
-#contact ul li {
-  margin-right: 60px;
-}
 
 #copyright {
   height: 100px;

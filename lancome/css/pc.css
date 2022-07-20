@@ -1,7 +1,7 @@
 @charset "utf-8";
 
-/* nav */
 
+/* nav */
 nav #gnb {
   display: flex;
   margin-right: 250px;
@@ -32,27 +32,39 @@ nav #registry li a:hover {
   display: none;
 }
 
-/*********** content ************/
-.ghost_btn:hover {
-  background-color: #d51b51;
-  color: #fff;
+/*********** banner ************/
+#banner {
+  height: 650px;
 }
 
+#banner h2 span {
+  display: block;
+}
+
+#banner .txt {
+  margin-top: 150px;
+}
+
+#banner h2 {
+  font-size: 60px;
+  line-height: 1.5;
+  margin-bottom: 180px;
+}
+
+/*********** content ************/
+.ghost_btn:hover {
+  color: #d51b51;
+}
 
 #content ul {
-  width: 70vw;
+  width: 80vw;
 }
 
 #content ul li {
-  height: 65vh;
-}
-
-#content img {
-  margin: 50px 85px 0;
+  height: 60vh;
 }
 
 #content {
-
   transform: translateY(100px);
   transition: .4s;
 }
@@ -64,7 +76,7 @@ nav #registry li a:hover {
 
 /*********** poundation , mascara ************/
 #poundation {
-  margin-top: 250px;
+  margin-top: 200px;
 }
 
 #poundation img,
@@ -76,7 +88,6 @@ nav #registry li a:hover {
 #mascara img {
   margin-left: 100px;
 }
-
 
 #poundation .txt,
 #mascara .txt {

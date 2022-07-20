@@ -9,11 +9,8 @@ a {
 }
 
 .ghost_btn {
-  margin-top: 20px;
-  background-color: #efefef;
-  width: 100px;
-  padding: 10px;
-  text-align: center;
+  border-bottom: 1px solid #222;
+  padding: 4px 8px;
 }
 
 .title {
@@ -30,6 +27,7 @@ img {
 
 /*********** nav ************/
 nav {
+  overflow: hidden;
   background-color: #fff;
   position: fixed;
   width: 100%;
@@ -71,6 +69,7 @@ nav #menu_bar a img {
   display: flex;
   justify-content: center;
   position: relative;
+  text-align: center;
 }
 
 #banner .slide .left {
@@ -94,9 +93,10 @@ nav #menu_bar a img {
 }
 
 #banner .txt {
+  margin-top: 220px;
   display: flex;
   flex-direction: column;
-  align-content: center;
+  align-items: center;
   justify-content: center;
   text-align: center;
 }
@@ -104,22 +104,24 @@ nav #menu_bar a img {
 #banner p {
   font-size: 17px;
   margin: 50px 0 24px;
-  letter-spacing: 4px;
+  letter-spacing: 5px;
 }
 
 #banner h2 {
+  margin-bottom: 200px;
   font-weight: 700;
   font-size: 42px;
   font-family: 'Jost', sans-serif;
 }
 
+
 /*********** content ************/
 #content {
-  margin-top: 50px;
+  text-align: center;
+  /* margin-top: 50px; */
 }
 
-#content>p {
-  text-align: center;
+#content p {
   font-weight: 500;
 }
 
@@ -134,9 +136,7 @@ nav #menu_bar a img {
   width: 82%;
   height: 60vh;
   margin: 1%;
-  box-shadow: 0 0 30px #ddd;
   background-color: #fff;
-  /* padding: 30px; */
 }
 
 
@@ -162,7 +162,7 @@ nav #menu_bar a img {
   line-height: 1.8;
   font-weight: 400;
   color: #444;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 #content ul li p span {
@@ -171,8 +171,7 @@ nav #menu_bar a img {
 
 #content img {
   width: 60%;
-  margin-left: 70px;
-  margin-top: 30px;
+  /* margin-top: 30px; */
 }
 
 #circle {
@@ -207,7 +206,7 @@ nav #menu_bar a img {
 }
 
 .box img {
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .box .txt {
@@ -266,6 +265,15 @@ nav #menu_bar a img {
   font-size: 18px;
   line-height: 1.8;
   font-weight: 300;
+}
+
+#rewards .ghost_btn {
+  color: #fff;
+  margin-top: 25px;
+  border: 1px solid #fff;
+  width: 100px;
+  padding: 10px;
+  text-align: center;
 }
 
 /*********** clarifique, genifique ************/
@@ -338,7 +346,6 @@ nav #menu_bar a img {
   background-color: #fff;
   width: 220px;
   height: 220px;
-  box-shadow: 0 0 30px #e0e0e0;
 }
 
 #product ul li img {
@@ -349,7 +356,7 @@ nav #menu_bar a img {
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.8;
-  margin: 30px 0 40px;
+  margin: 30px 0 70px;
 }
 
 #product ul li #color {
@@ -438,12 +445,9 @@ nav #menu_bar a img {
 }
 
 /* ---- footer ---- */
-footer {
-  overflow: hidden;
-}
 
 #contact {
-  width: 100%;
+  /* width: 100%; */
   height: 400px;
   background-color: #000;
   color: rgb(243, 243, 243);

@@ -245,12 +245,14 @@ nav #menu_bar a img {
 /*********** rewards ************/
 #rewards {
   background: url(../images/Reward_banner.png) no-repeat 60% / cover;
-  height: 50vh;
+  height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 0 40px;
   color: #fff;
+  margin-top: 150px;
+  margin-bottom: 100px;
 }
 
 #rewards h2 {
@@ -302,11 +304,13 @@ nav #menu_bar a img {
 
 #video {
   display: none;
+  margin-top: 100px;
+  overflow: hidden;
 }
 
 /*********** product ************/
 #product {
-  margin-top: 100px;
+  margin-top: 200px;
   text-align: center;
 }
 
@@ -404,7 +408,7 @@ nav #menu_bar a img {
 
 /* ---- instagram ---- */
 #instagram {
-  margin-top: 50px;
+  margin-top: 100px;
   padding: 5px 36px 100px;
 }
 

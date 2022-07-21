@@ -1,5 +1,8 @@
 @charset "utf-8";
 
+.ghost_btn:hover {
+  color: #d51b51;
+}
 
 /* nav */
 nav #gnb {
@@ -51,106 +54,72 @@ nav #registry li a:hover {
   margin-bottom: 180px;
 }
 
-/*********** content ************/
-.ghost_btn:hover {
-  color: #d51b51;
-}
-
-#content ul {
-  width: 80vw;
-}
-
-#content ul li {
-  height: 60vh;
-}
-
-#content {
-  transform: translateY(100px);
-  transition: .4s;
-}
-
-#content ul li a:hover img {
-  opacity: 1;
-  transform: translateY(-20px);
-}
-
 /*********** poundation , mascara ************/
-#poundation {
-  margin-top: 200px;
+#poundation .txt h2,
+#mascara .txt h2 {
+  font-size: 42px;
 }
 
-#poundation img,
-#mascara img {
-  width: 80%;
+#poundation .txt p,
+#mascara .txt p {
+  font-size: 20px;
 }
 
-#poundation img,
-#mascara img {
-  margin-left: 100px;
+/*********** new product ************/
+#poundation .txt h2 span,
+#poundation .txt p span,
+#mascara .txt h2 span,
+#mascara .txt p span,
+.new1 .txt h3 span,
+.new2 .txt h3 span {
+  display: block;
+}
+
+#poundation .img,
+#mascara .img {
+  width: 50%;
 }
 
 #poundation .txt,
+#mascara .txt,
+.new1 .txt,
+.new2 .txt {
+  width: 40%;
+  padding-left: 100px;
+}
+
 #mascara .txt {
-  width: 30vw;
-  padding: 100px 200px 0;
+  width: 50%;
+  padding-left: 200px;
 }
 
-.box .txt h2 {
-  font-size: 40px;
+.new1 .txt h2,
+.new2 .txt h2 {
+  font-size: 44px;
 }
 
-.box .txt p {
+.new1 .txt p,
+.new2 .txt p {
+  font-size: 22px;
+}
+
+.new1 .txt h3,
+.new2 .txt h3 {
   font-size: 20px;
 }
 
 /*********** rewards ************/
-#rewards {
+#reward_banner {
   padding: 0 100px;
 }
 
-#rewards h2 {
+#reward_banner h2 {
   font-size: 42px;
 }
 
-#rewards p {
+#reward_banner p {
   font-size: 20px;
 }
-
-/*********** poundation , mascara ************/
-#clarifique .title {
-  margin: 50px 0;
-}
-
-#clarifique .txt p,
-#genifique .txt p {
-  font-size: 20px;
-}
-
-#clarifique .txt h4,
-#genifique .txt h4 {
-  font-size: 18px;
-}
-
-#clarifique .txt,
-#genifique .txt {
-  width: 25vw;
-  padding: 120px 0;
-}
-
-#genifique .img {
-  margin-left: 150px;
-}
-
-#genifique .img a img,
-#clarifique .img a img {
-  width: 80%;
-}
-
-#clarifique .txt,
-#genifique .txt {
-  padding: 80px;
-}
-
 
 /*********** product ************/
 #product {
@@ -162,7 +131,7 @@ nav #registry li a:hover {
 }
 
 #product ul {
-  grid-template-columns: repeat(4, 380px);
+  grid-template-columns: repeat(4, 330px);
   justify-content: center;
 }
 
@@ -174,14 +143,15 @@ nav #registry li a:hover {
   font-size: 18px;
 }
 
+
 #product ul li:nth-child(2),
 #product ul li:nth-child(3) {
   display: block;
 }
 
 #product ul li .img {
-  width: 350px;
-  height: 350px;
+  width: 330px;
+  height: 330px;
 }
 
 /*********** instagram ************/

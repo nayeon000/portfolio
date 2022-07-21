@@ -4,8 +4,12 @@ html {
   font-family: 'Noto Sans KR', sans-serif;
 }
 
+img {
+  width: 100%;
+}
+
 a {
-  color: #000;
+  color: #222;
 }
 
 .ghost_btn {
@@ -21,13 +25,60 @@ a {
   text-align: center;
 }
 
-img {
-  width: 100%;
+.circle {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  text-indent: -999999px;
+}
+
+.circle .circles {
+  margin-right: 3px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.circle .black {
+  background-color: rgb(175, 175, 175);
+}
+
+.circle .white {
+  background-color: #efefef;
+}
+
+/* .up, .kakao */
+.Up {
+  overflow: hidden;
+  width: 45px;
+  height: 45px;
+  background: rgba(0, 0, 0, .5) url(../images/arrow_up.svg) no-repeat 50%;
+  text-indent: -9999px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  transition: .3s;
+  border-radius: 5%;
+}
+
+.Up:hover {
+  background-color: rgba(161, 161, 161, 0.5);
+  background-position: 50% -3px;
+}
+
+.kakao {
+  width: 100px;
+  height: 45px;
+  background: url(../images/kakaotalk.png) no-repeat 50%;
+  text-indent: -9999px;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  transition: .3s;
 }
 
 /*********** nav ************/
 nav {
-  overflow: hidden;
   background-color: #fff;
   position: fixed;
   width: 100%;
@@ -35,8 +86,6 @@ nav {
   box-shadow: 0 0 3px #222;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-
   z-index: 1000;
 }
 
@@ -45,10 +94,7 @@ nav h1 {
   margin-left: 30px;
 }
 
-nav #gnb {
-  display: none;
-}
-
+nav #gnb,
 nav #registry {
   display: none;
 }
@@ -58,7 +104,7 @@ nav #menu_bar a img {
 }
 
 /* ---- banner ---- */
-#banner {
+header {
   margin: auto;
   background: url(../images/banner.png) no-repeat 17% 0;
   height: 600px;
@@ -72,7 +118,7 @@ nav #menu_bar a img {
   text-align: center;
 }
 
-#banner .slide .left {
+header .slide .left {
   position: absolute;
   top: 350px;
   left: 0;
@@ -82,7 +128,7 @@ nav #menu_bar a img {
   border-radius: 5%;
 }
 
-#banner .slide .right {
+header .slide .right {
   position: absolute;
   top: 350px;
   right: 0;
@@ -92,7 +138,7 @@ nav #menu_bar a img {
   border-radius: 5%;
 }
 
-#banner .txt {
+header .txt {
   margin-top: 220px;
   display: flex;
   flex-direction: column;
@@ -101,28 +147,22 @@ nav #menu_bar a img {
   text-align: center;
 }
 
-#banner p {
+header p {
   font-size: 17px;
   margin: 50px 0 24px;
   letter-spacing: 5px;
 }
 
-#banner h2 {
+header h2 {
   margin-bottom: 200px;
   font-weight: 700;
   font-size: 42px;
   font-family: 'Jost', sans-serif;
 }
 
-
 /*********** content ************/
 #content {
   text-align: center;
-  /* margin-top: 50px; */
-}
-
-#content p {
-  font-weight: 500;
 }
 
 #content ul {
@@ -138,7 +178,6 @@ nav #menu_bar a img {
   margin: 1%;
   background-color: #fff;
 }
-
 
 #content ul li:nth-child(2),
 #content ul li:nth-child(3) {
@@ -171,36 +210,15 @@ nav #menu_bar a img {
 
 #content img {
   width: 60%;
-  /* margin-top: 30px; */
-}
-
-#circle {
-  display: flex;
-  justify-content: center;
-  margin-top: 40px;
-  text-indent: -999999px;
-}
-
-#circle .circles {
-  margin-right: 3px;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-}
-
-#circle .black {
-  background-color: rgb(175, 175, 175);
-}
-
-#circle .white {
-  background-color: #efefef;
 }
 
 /*********** poundation , mascara ************/
 #poundation,
-#clarifique {
+.new1 {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin: 0 auto;
   width: 90vw;
 }
@@ -232,7 +250,7 @@ nav #menu_bar a img {
 
 /*********** mascara ************/
 #mascara,
-#genifique {
+.new2 {
   border-top: 1px solid #ddd;
   display: flex;
   flex-direction: column-reverse;
@@ -242,7 +260,7 @@ nav #menu_bar a img {
 }
 
 /*********** rewards ************/
-#rewards {
+#reward_banner {
   background: url(../images/Reward_banner.png) no-repeat 60% / cover;
   height: 60vh;
   display: flex;
@@ -254,20 +272,20 @@ nav #menu_bar a img {
   margin-bottom: 100px;
 }
 
-#rewards h2 {
+#reward_banner h2 {
   font-size: 36px;
   font-family: 'Jost', sans-serif;
   font-weight: 700;
   margin-bottom: 25px;
 }
 
-#rewards p {
+#reward_banner p {
   font-size: 18px;
   line-height: 1.8;
   font-weight: 300;
 }
 
-#rewards .ghost_btn {
+#reward_banner .ghost_btn {
   color: #fff;
   margin-top: 25px;
   border: 1px solid #fff;
@@ -277,32 +295,24 @@ nav #menu_bar a img {
 }
 
 /*********** clarifique, genifique ************/
-#clarifique img,
-#genifique img {
+.new1 img,
+.new2 img {
   width: 90%;
   margin-top: 50px;
 }
 
-#clarifique .img,
-#genifique .img {
+.new1 .img,
+.new2 .img {
   text-align: center;
 }
 
-#clarifique .txt p,
-#genifique .txt p {
+.new1 .txt p,
+.new2 .txt p {
   margin-bottom: 10px;
 }
 
-#clarifique .txt h3,
-#genifique .txt h3 {
-  font-family: 'Jost', sans-serif;
-  font-size: 36px;
-  font-weight: 500;
-  margin-bottom: 10px;
-}
-
-#clarifique .txt h4,
-#genifique .txt h4 {
+.new1 .txt h3,
+.new2 .txt h3 {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.8;
@@ -312,13 +322,11 @@ nav #menu_bar a img {
 
 #video {
   display: none;
-  margin-top: 100px;
-  overflow: hidden;
 }
 
 /*********** product ************/
 #product {
-  margin-top: 200px;
+  margin-top: 150px;
   text-align: center;
 }
 
@@ -333,8 +341,8 @@ nav #menu_bar a img {
 
 #product ul {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-items: center;
+  grid-template-columns: repeat(2, 210px);
+  justify-content: center;
 }
 
 #product ul li:nth-child(2),
@@ -344,12 +352,12 @@ nav #menu_bar a img {
 
 #product ul li .img {
   background-color: #fff;
-  width: 220px;
-  height: 220px;
+  width: 210px;
+  height: 210px;
 }
 
 #product ul li img {
-  width: 85%;
+  width: 87%;
 }
 
 #product ul li p {
@@ -359,51 +367,51 @@ nav #menu_bar a img {
   margin: 30px 0 70px;
 }
 
-#product ul li #color {
+#product ul li .color {
   text-indent: -999999px;
 }
 
-#color {
+.color {
   display: flex;
   justify-content: center;
   padding: 10px;
 }
 
-#color .box {
+.color .box {
   width: 12px;
   height: 12px;
   margin-right: 3px;
 }
 
-#color .purple {
+.color .purple {
   background-color: #a174a2;
 }
 
-#color .brown {
+.color .brown {
   background-color: #bd8f80;
 }
 
-#color .red {
+.color .red {
   background-color: #9b3d3e;
 }
 
-#color .orange {
+.color .orange {
   background-color: #d03a46;
 }
 
-#color .salmon {
+.color .salmon {
   background-color: #ba082c;
 }
 
-#color .color1 {
+.color .color1 {
   background-color: #ffcdb2;
 }
 
-#color .color2 {
+.color .color2 {
   background-color: #ffd6b0;
 }
 
-#color .color3 {
+.color .color3 {
   background-color: #f1ba99;
 }
 
@@ -446,8 +454,8 @@ nav #menu_bar a img {
 
 /* ---- footer ---- */
 
-#contact {
-  height: 400px;
+#footer1 {
+  height: 380px;
   background-color: #000;
   color: rgb(243, 243, 243);
   padding: 80px;
@@ -456,23 +464,19 @@ nav #menu_bar a img {
   justify-content: space-between;
 }
 
-#contact h1 {
-  padding: 0 12px 50px;
-}
-
-#contact h3 {
+#footer1 h3 {
   font-size: 14px;
   font-weight: 500;
   margin-bottom: 25px;
 }
 
-#contact p {
+#footer1 p {
   font-size: 15px;
   line-height: 1.5;
   font-weight: 300;
 }
 
-#contact .portfolio {
+.portfolio {
   background-color: rgba(255, 255, 255, 0.8);
   color: #444;
   padding: 10px;
@@ -483,50 +487,20 @@ nav #menu_bar a img {
   text-align: center;
 }
 
-#copyright {
-  /* position: relative; */
+#footer2 {
   display: flex;
   flex-direction: column;
   width: 100%;
   background-color: #d51b51;
-  height: 180px;
+  height: 120px;
   align-items: center;
   justify-content: center;
 }
 
-#copyright p {
+#footer2 p,
+#footer2 h4 {
   font-size: 14px;
   color: #fff;
   margin-bottom: 16px;
   text-align: center;
-}
-
-/* .up, .kakao */
-.Up {
-  overflow: hidden;
-  width: 45px;
-  height: 45px;
-  background: rgba(0, 0, 0, .5) url(../images/arrow_up.svg) no-repeat 50%;
-  text-indent: -9999px;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  transition: .3s;
-  border-radius: 5%;
-}
-
-.Up:hover {
-  background-color: rgba(161, 161, 161, 0.5);
-  background-position: 50% -3px;
-}
-
-.kakao {
-  width: 100px;
-  height: 45px;
-  background: url(../images/kakaotalk.png) no-repeat 50%;
-  text-indent: -9999px;
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
-  transition: .3s;
 }

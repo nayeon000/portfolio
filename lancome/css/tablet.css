@@ -1,77 +1,66 @@
 @charset "utf-8";
 
 /*********** content ************/
+#content ul {
+  flex-direction: row;
+}
+
 #content ul li:nth-child(2),
 #content ul li:nth-child(3) {
   display: block;
 }
 
+#content .circle {
+  display: none;
+}
+
 #content ul li {
-  width: 85%;
+  width: 90%;
 }
 
 #content ul li .txt {
   padding: 50px;
 }
 
-#content #circle {
-  display: none;
-}
-
 /*********** poundation , mascara ************/
 #poundation,
-#clarifique {
+#mascara,
+.new1,
+.new2 {
   flex-direction: row;
-}
-
-#poundation .txt {
-  width: 85vw;
-  padding-top: 50px;
+  justify-content: center;
+  align-items: center
 }
 
 #mascara .txt {
-  width: 90vw;
-  padding-top: 50px;
-}
-
-#mascara,
-#genifique {
-  flex-direction: row;
-}
-
-#clarifique {
-  display: block;
-}
-
-#clarifique .flex {
-  display: flex;
+  margin-top: 50px;
 }
 
 /*********** product ************/
 
 
 #product ul {
-  grid-template-columns: repeat(3, 250px);
-  justify-content: space-around;
+  grid-template-columns: repeat(3, 260px);
+  justify-content: center;
 }
 
 #product ul li img {
   overflow: hidden;
-  width: 80%;
+  width: 85%;
 }
 
 #product ul li .img {
-  width: 250px;
-  height: 250px;
+  width: 260px;
+  height: 270px;
 }
 
 /*********** footer ************/
-#contact {
+#footer1 {
   height: 60px;
   flex-direction: row;
 }
 
 
-#copyright {
+#footer2 {
   height: 100px;
 }

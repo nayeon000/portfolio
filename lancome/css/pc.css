@@ -54,6 +54,11 @@ nav #registry li a:hover {
   margin-bottom: 180px;
 }
 
+#content ul li .txt p span,
+#content ul li .txt h3 span {
+  display: inline;
+}
+
 /*********** poundation , mascara ************/
 #poundation .txt h2,
 #mascara .txt h2 {
@@ -64,6 +69,7 @@ nav #registry li a:hover {
 #mascara .txt p {
   font-size: 20px;
 }
+
 
 /*********** new product ************/
 #poundation .txt h2 span,

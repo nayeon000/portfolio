@@ -2,7 +2,8 @@
 
 /*********** content ************/
 #content ul {
-  flex-direction: row;
+  grid-template-columns: repeat(3, 30%);
+  justify-content: center;
 }
 
 #content ul li:nth-child(2),
@@ -14,8 +15,13 @@
   display: none;
 }
 
-#content ul li {
-  width: 90%;
+#content ul li .txt p span,
+#content ul li .txt h3 span {
+  display: block;
+}
+
+#content ul li .txt h3 {
+  line-height: 1.5;
 }
 
 #content ul li .txt {

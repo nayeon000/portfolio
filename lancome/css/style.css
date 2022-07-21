@@ -166,17 +166,8 @@ header h2 {
 }
 
 #content ul {
-  display: flex;
-  justify-content: center;
-  width: 90vw;
-  margin: 50px auto;
-}
-
-#content ul li {
-  width: 82%;
-  height: 60vh;
-  margin: 1%;
-  background-color: #fff;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
 }
 
 #content ul li:nth-child(2),
@@ -186,6 +177,7 @@ header h2 {
 
 #content ul li .txt {
   padding: 30px;
+
 }
 
 #content ul li h3 {
@@ -209,10 +201,15 @@ header h2 {
 }
 
 #content img {
-  width: 60%;
+  margin-top: 80px;
+  width: 50%;
 }
 
 /*********** poundation , mascara ************/
+#poundation img {
+  margin-top: 100px;
+}
+
 #poundation,
 .new1 {
   display: flex;

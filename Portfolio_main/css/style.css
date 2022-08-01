@@ -1,0 +1,294 @@
+@charset "utf-8";
+
+html {
+  font-family: 'Manrope', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {}
+
+/* header */
+header {
+  padding: 38px 60px 49px 50px;
+  height: 1080px;
+}
+
+/* @keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 5%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+} */
+
+header h1 {
+  position: relative;
+  animation: fadeInUp 3s;
+  font-size: 207.36px;
+  color: #2D2D2D;
+}
+
+header nav ul {
+  margin-top: 70px;
+  margin-left: 10px;
+}
+
+header nav ul li {
+  margin-bottom: 27px;
+}
+
+header nav ul li a {
+  font-size: 24px;
+  color: #2d2d2d;
+}
+
+header .btn {}
+
+header .txt {}
+
+/* main */
+main {}
+
+main .title {
+  font-size: 80px;
+  font-weight: 600;
+  padding-left: 50px;
+}
+
+main .title span {
+  color: #F53024;
+  font-family: Pretendard;
+}
+
+/* about */
+main #about {
+  margin-top: 87px;
+  width: 100%;
+  height: 1080px;
+  display: flex;
+  /* justify-content: space-around; */
+  font-family: Pretendard;
+}
+
+#about .intro {
+  margin: 60px 232px 0 232px;
+
+  /* width: 40%; */
+}
+
+#about .intro h2 {
+  color: #2d2d2d;
+  font-size: 50px;
+  line-height: 1.8;
+  margin-bottom: 120px;
+  font-weight: bold;
+}
+
+#about .intro h2 span {
+  color: #f53024;
+}
+
+#about .intro p {
+  font-size: 20px;
+}
+
+#about .introMe {}
+
+#about .introMe ul {}
+
+#about .introMe ul li {
+  height: 136px;
+  border-bottom: 1px solid #ddd;
+  margin-top: 56px;
+}
+
+#about .introMe ul li .txt {
+  display: flex;
+}
+
+#about .introMe ul li h3 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #f53024;
+  margin-right: 137px;
+}
+
+#about .introMe ul li p {
+  font-size: 22px;
+  line-height: 1.5;
+  color: #000000;
+  font-weight: 500;
+}
+
+/* skills */
+main #skills {
+  width: 100%;
+  height: 1080px;
+}
+
+#skills .skills_box {
+  margin-left: 377px;
+  margin-top: 95px;
+  display: grid;
+  /* justify-content: space-evenly; */
+  grid-template-columns: repeat(2, 40%);
+  grid-template-rows: repeat(2, 50%);
+}
+
+#skills .skills_box h3 {
+  font-weight: 600;
+  font-size: 28px;
+  color: #f53024;
+  margin-bottom: 60px;
+}
+
+#skills .skills_box ul {
+  font-size: 20px;
+  font-family: Pretendard;
+  font-weight: 500;
+}
+
+#skills .skills_box .box2,
+#skills .skills_box .box4 {
+  margin-left: 150px;
+}
+
+#skills .skills_box ul li {
+  line-height: 1.8;
+}
+
+#skills .skills_box ul li:last-child {
+  margin-bottom: 108px;
+}
+
+/* works */
+main #works {
+  color: #fff;
+  width: 100%;
+  background-color: #000;
+}
+
+main #works .title {
+  color: #fff;
+}
+
+#works #work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#works #work .web {
+  margin-bottom: 140px;
+}
+
+#works #work .web .txt {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+#work .web .txt h3 {
+  font-size: 27px;
+}
+
+#work .web .txt h3 a {
+  color: #fff;
+}
+
+#work .web .txt ul li {
+  font-size: 14px;
+  margin-left: 15px;
+}
+
+#work .web .txt ul li:nth-child(1),
+#work .web .txt ul li:nth-child(2) {
+  border: 1px solid #fff;
+  width: 130px;
+  height: 36px;
+  text-align: center;
+  line-height: 36px;
+  border-radius: 20px;
+}
+
+#work .web .txt ul .num {
+  font-size: 19px;
+  line-height: 36px;
+}
+
+#work .web .txt ul {
+  display: flex;
+}
+
+#works #work .web1 {
+  margin-top: 88px;
+}
+
+/* footer */
+footer {
+  background-color: #000;
+  color: #fff;
+}
+
+#contact {
+  width: 90vw;
+  margin: auto;
+}
+
+#contact h2 {
+
+  font-size: 300px;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 130px;
+}
+
+#contact h2 span {
+  font-family: Pretendard;
+  color: #F53024;
+}
+
+#contact p {
+  margin-top: 30px;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+#contact h3 {
+  font-size: 74px;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 50px;
+}
+
+#contact .link ul {
+  padding-top: 130px;
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 100px;
+}
+
+#contact .link ul li {
+  /* width: 25%; */
+  padding-left: 20px;
+}
+
+#contact .link ul li a {
+  font-size: 24px;
+  color: #fff;
+}
+
+/* script */
+.circle {
+  transition: .1s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #F53024;
+  transform: translate((-50%, -50%));
+}

@@ -3,13 +3,20 @@
 html {
   font-family: 'Manrope', sans-serif;
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
 }
 
 
 /* header */
 header {
-  padding: 38px 60px 49px 50px;
-  height: 1080px;
+  /* max-width: 100%; */
+  padding: 38px 60px 0px 50px;
+  height: 900px;
+}
+
+header .title {
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 /* @keyframes fadeInUp {
@@ -25,9 +32,9 @@ header {
 } */
 
 header h1 {
-  position: relative;
-  animation: fadeInUp 3s;
-  font-size: 207.36px;
+  /* position: relative;
+  animation: fadeInUp 3s; */
+  font-size: 10.5vw;
   color: #2D2D2D;
 }
 
@@ -221,6 +228,10 @@ main #works .title {
 
 #work .web .txt h3 a {
   color: #fff;
+}
+
+#work .web .img a img {
+  width: 100%;
 }
 
 #work .web .txt ul li {

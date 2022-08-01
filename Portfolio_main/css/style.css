@@ -5,7 +5,6 @@ html {
   scroll-behavior: smooth;
 }
 
-body {}
 
 /* header */
 header {
@@ -42,16 +41,30 @@ header nav ul li {
 }
 
 header nav ul li a {
+  display: block;
+}
+
+header nav ul li a:hover {
+  color: #F53024;
+}
+
+header nav ul li a {
   font-size: 24px;
   color: #2d2d2d;
 }
 
-header .btn {}
+header .header_bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 120px;
+}
 
-header .txt {}
+header .txt ul li {
+  list-style-type: disc;
+  font-size: 22px;
+}
 
 /* main */
-main {}
 
 main .title {
   font-size: 80px;
@@ -92,13 +105,19 @@ main #about {
   color: #f53024;
 }
 
+#about .intro .circles {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ddd;
+  text-indent: -9999px;
+  z-index: 100;
+}
+
 #about .intro p {
   font-size: 20px;
 }
 
-#about .introMe {}
-
-#about .introMe ul {}
 
 #about .introMe ul li {
   height: 136px;
@@ -196,6 +215,10 @@ main #works .title {
   font-size: 27px;
 }
 
+#work .web .txt h3 a:hover {
+  color: #F53024;
+}
+
 #work .web .txt h3 a {
   color: #fff;
 }
@@ -278,6 +301,15 @@ footer {
 #contact .link ul li a {
   font-size: 24px;
   color: #fff;
+}
+
+#contact .link ul li img {
+  /* width: 10%; */
+  margin: 5px 0 0 5px;
+}
+
+#contact .link ul li a:hover {
+  color: #F53024;
 }
 
 /* script */

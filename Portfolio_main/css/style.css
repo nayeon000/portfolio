@@ -21,12 +21,17 @@ a {
   will-change: transform;
 }
 
+body {
+  height: 100%;
+}
 
 /**** header ****/
 header {
   height: 100vh;
   width: 92vw;
   margin: 0 auto;
+  padding-bottom: 150px;
+  border-bottom: 1px solid #eeeeee;
 }
 
 header h1 {
@@ -69,7 +74,7 @@ header nav ul li a:hover {
 #header_bottom {
   display: flex;
   justify-content: space-between;
-  margin-top: 120px;
+  margin-top: 55px;
 }
 
 #header_bottom .btn a img {
@@ -84,15 +89,16 @@ header nav ul li a:hover {
 
 /**** about ****/
 #about {
-  margin-top: 50px;
+  /* padding-top: 30px; */
   overflow: hidden;
   font-family: Pretendard;
   height: 100vh;
   width: 90vw;
-  margin: 0 auto;
+  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-bottom: 1px solid #eeeeee;
 }
 
 #about .intro {
@@ -309,7 +315,6 @@ footer {
 }
 
 #contact {
-  width: 90vw;
   margin: auto;
 }
 

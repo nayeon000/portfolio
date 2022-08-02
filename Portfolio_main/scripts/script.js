@@ -22,4 +22,9 @@ function ani() {
   circle.style.transform = `translate(${circleX}px,${circleY}px)`;
 }
 
-ani();// 함수호출
+ani();
+
+// 스크롤시 한페이지식
+
+// 기본 이벤트 제거 
+

@@ -2,17 +2,14 @@
 
 html {
   font-family: 'Manrope', sans-serif;
-  scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
 }
 
-body {
-  /* width: 100%; */
-  height: 100vh;
-  /* overflow: hidden; */
+a {
+  color: #2d2d2d;
 }
 
-/* script */
+/**** script ****/
 .circle {
   width: 20px;
   height: 20px;
@@ -22,105 +19,87 @@ body {
   top: 0px;
   left: 0px;
   will-change: transform;
-
 }
 
-/* header */
+
+/**** header ****/
 header {
-  /* max-width: 100%; */
-  padding: 38px 60px 0px 50px;
-  height: 900px;
-  /* border-bottom: 1px solid #ddd; */
+  height: 100vh;
+  width: 92vw;
+  margin: 0 auto;
 }
 
-header .title {
-  display: flex;
-  flex-wrap: nowrap;
+header h1 {
+  padding-top: 30px;
+  font-weight: 400;
+  font-size: 10.5vw;
+  color: #2d2d2d;
+  margin-bottom: 70px;
+  position: relative;
+  animation: fadeInUp 1.5s;
 }
 
 @keyframes fadeInUp {
   0% {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translate3d(0, 20%, 0);
   }
 
   to {
-    opacity: 3;
+    opacity: 1;
     transform: translateZ(0);
   }
 }
 
-header h1 {
-  position: relative;
-  animation: fadeInUp 1s;
-  font-size: 10.5vw;
-  color: #2D2D2D;
+header nav {
+  display: flex;
+  flex-direction: column;
 }
 
-header nav ul {
-  margin-top: 70px;
-  margin-left: 10px;
-}
-
-header nav ul li {
-  margin-bottom: 27px;
-}
-
-header nav ul li a {
+header nav li a {
+  margin-bottom: 25px;
   display: block;
+  font-size: 24px;
 }
 
 header nav ul li a:hover {
   color: #F53024;
 }
 
-header nav ul li a {
-  font-size: 24px;
-  color: #2d2d2d;
-}
-
-header .header_bottom {
+#header_bottom {
   display: flex;
   justify-content: space-between;
   margin-top: 120px;
 }
 
-header .txt ul li {
+#header_bottom .btn a img {
+  width: 120%;
+}
+
+#header_bottom .txt ul li {
   list-style-type: disc;
   font-size: 22px;
+  padding-right: 100px;
 }
 
-/* main */
-
-main .title {
-  font-size: 80px;
-  font-weight: 600;
-  padding-left: 50px;
-}
-
-main .title span {
-  color: #F53024;
+/**** about ****/
+#about {
+  overflow: hidden;
   font-family: Pretendard;
-}
-
-/* about */
-main #about {
-  border-bottom: 1px solid #ddd;
+  height: 100vh;
   width: 90vw;
-  height: 1000px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(2, 40%);
+  display: flex;
   justify-content: center;
-  justify-items: center;
   align-items: center;
-  font-family: Pretendard;
-  padding-bottom: 50px;
 }
 
 #about .intro {
-  justify-self: start;
-  /* margin: 60px 232px 0 232px; */
+  width: 40vw;
+}
+
+#about .introMe {
+  width: 35vw;
 }
 
 #about .intro h2 {
@@ -129,7 +108,9 @@ main #about {
   line-height: 1.8;
   margin-bottom: 100px;
   font-weight: bold;
+
 }
+
 
 #about .intro h2 span {
   color: #f53024;
@@ -143,38 +124,33 @@ main #about {
 }
 
 #about .intro .circles p {
-  width: 420px;
+  width: 40vw;
   line-height: 4;
   margin-left: 45px;
   font-size: 20px;
   font-family: Pretendard;
 }
 
-
-#about .intro p {
-  font-size: 20px;
-}
-
-#about .introMe {
-  margin-left: 190px;
-}
-
-#about .introMe ul li {
-  width: 38vw;
-  height: 136px;
-  border-bottom: 1px solid #ddd;
-  margin-top: 56px;
-}
-
 #about .introMe ul li .txt {
+  width: 783px;
   display: flex;
+  border-bottom: 1px solid #EEEEEE;
+  padding: 65px 0;
+}
+
+#about .introMe ul li .txt1 {
+  padding-top: 0;
+}
+
+#about .introMe ul li .txt3 {
+  border-bottom: none;
 }
 
 #about .introMe ul li h3 {
   font-size: 30px;
-  font-weight: bold;
+  font-weight: 700;
   color: #f53024;
-  margin-right: 137px;
+  margin-right: 180px;
 }
 
 #about .introMe ul li p {
@@ -184,50 +160,73 @@ main #about {
   font-weight: 500;
 }
 
-/* skills */
-main #skills {
-  margin-top: 100px;
-  width: 90vw;
-  height: 900px;
-  margin: auto;
-}
-
-#skills .skills_box h3 {
+/****  skills ****/
+.title {
+  margin-top: 50px;
+  font-size: 80px;
   font-weight: 600;
-  font-size: 28px;
-  color: #f53024;
-  margin-bottom: 60px;
+  padding-left: 50px;
 }
 
-#skills .skills_box {
-  margin-top: 100px;
-}
-
-#skills .skills_box .box {
-  border-bottom: 1px solid #ddd;
-  border-right: 1px solid #ddd;
-}
-
-#skills .skills_box ul {
-  font-size: 20px;
+.title span {
+  color: #F53024;
   font-family: Pretendard;
-  font-weight: 500;
 }
 
-#skills .skills_box ul li {
-  list-style-type: disc;
+#skills {
+  overflow: hidden;
+  padding-top: 10px;
 }
 
-#skills .skills_box {
-  width: 90vw;
-  margin: 0 auto;
+.skill_gird {
+  height: 100vh;
+  width: 85vw;
+  margin: auto;
+  margin-top: 95px;
   display: grid;
-  grid-template-columns: repeat(2, 30vw);
-  grid-template-rows: repeat(2, 15vw);
+  grid-template-columns: 35vw 35vw;
+  grid-auto-rows: 16vw;
   justify-content: center
 }
 
-/* works */
+.skill_gird div {
+  padding-left: 130px;
+}
+
+.skill_gird .border-right {
+  border-right: 1px solid #EEEEEE;
+}
+
+.skill_gird .border-bottom {
+  border-bottom: 1px solid #EEEEEE;
+}
+
+.skill_gird h3 {
+  font-weight: 700;
+  font-size: 28px;
+  color: #f53024;
+  margin-bottom: 50px;
+}
+
+.skill_gird ul li {
+  margin-left: 20px;
+  font-size: 20px;
+  font-family: Pretendard;
+  font-weight: 500;
+  list-style-type: disc;
+  line-height: 1.8;
+}
+
+.skill_gird .box3,
+.skill_gird .box4 {
+  padding-top: 60px;
+}
+
+/****  Works ****/
+#works {
+  padding-top: 10px;
+}
+
 main #works {
   overflow: hidden;
   color: #fff;
@@ -240,12 +239,16 @@ main #works .title {
 }
 
 #works #work {
+  width: 90vw;
+  margin: auto;
+  justify-content: center;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 #works #work .web {
+  height: 100vh;
   margin-bottom: 140px;
 }
 
@@ -268,7 +271,7 @@ main #works .title {
 }
 
 #work .web .img a img {
-  width: 100%;
+  max-width: 100%;
 }
 
 #work .web .txt ul li {
@@ -301,6 +304,7 @@ main #works .title {
 
 /* footer */
 footer {
+  height: 100vh;
   background-color: #000;
   color: #fff;
 }
@@ -343,11 +347,15 @@ footer {
 #contact .link ul li {
   /* width: 25%; */
   padding-left: 20px;
+  position: relative;
 }
+
 
 #contact .link ul li a {
   font-size: 24px;
   color: #fff;
+  display: block;
+  border-bottom: 1px solid #fff;
 }
 
 #contact .link ul li img {

@@ -6,11 +6,31 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
+body {
+  /* width: 100%; */
+  height: 100vh;
+  /* overflow: hidden; */
+}
+
+/* script */
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #F53024;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  will-change: transform;
+
+}
+
 /* header */
 header {
   /* max-width: 100%; */
   padding: 38px 60px 0px 50px;
   height: 900px;
+  /* border-bottom: 1px solid #ddd; */
 }
 
 header .title {
@@ -85,15 +105,17 @@ main .title span {
 
 /* about */
 main #about {
-  margin-top: 87px;
-  width: 100%;
+  border-bottom: 1px solid #ddd;
+  width: 90vw;
   height: 1000px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2, 40%);
   justify-content: center;
   justify-items: center;
   align-items: center;
   font-family: Pretendard;
+  padding-bottom: 50px;
 }
 
 #about .intro {
@@ -105,7 +127,7 @@ main #about {
   color: #2d2d2d;
   font-size: 50px;
   line-height: 1.8;
-  margin-bottom: 120px;
+  margin-bottom: 100px;
   font-weight: bold;
 }
 
@@ -114,20 +136,31 @@ main #about {
 }
 
 #about .intro .circles {
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
+  background-color: #F1F1F1;
   border-radius: 50%;
-  background-color: #ddd;
-  text-indent: -9999px;
-  z-index: 100;
 }
+
+#about .intro .circles p {
+  width: 420px;
+  line-height: 4;
+  margin-left: 45px;
+  font-size: 20px;
+  font-family: Pretendard;
+}
+
 
 #about .intro p {
   font-size: 20px;
 }
 
+#about .introMe {
+  margin-left: 190px;
+}
 
 #about .introMe ul li {
+  width: 38vw;
   height: 136px;
   border-bottom: 1px solid #ddd;
   margin-top: 56px;
@@ -153,17 +186,10 @@ main #about {
 
 /* skills */
 main #skills {
-  width: 100%;
-  height: 1080px;
-}
-
-#skills .skills_box {
-  margin-left: 377px;
-  margin-top: 95px;
-  display: grid;
-  /* justify-content: space-evenly; */
-  grid-template-columns: repeat(2, 40%);
-  grid-template-rows: repeat(2, 50%);
+  margin-top: 100px;
+  width: 90vw;
+  height: 900px;
+  margin: auto;
 }
 
 #skills .skills_box h3 {
@@ -173,27 +199,37 @@ main #skills {
   margin-bottom: 60px;
 }
 
+#skills .skills_box {
+  margin-top: 100px;
+}
+
+#skills .skills_box .box {
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+
 #skills .skills_box ul {
   font-size: 20px;
   font-family: Pretendard;
   font-weight: 500;
 }
 
-#skills .skills_box .box2,
-#skills .skills_box .box4 {
-  margin-left: 150px;
-}
-
 #skills .skills_box ul li {
-  line-height: 1.8;
+  list-style-type: disc;
 }
 
-#skills .skills_box ul li:last-child {
-  margin-bottom: 108px;
+#skills .skills_box {
+  width: 90vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 30vw);
+  grid-template-rows: repeat(2, 15vw);
+  justify-content: center
 }
 
 /* works */
 main #works {
+  overflow: hidden;
   color: #fff;
   width: 100%;
   background-color: #000;
@@ -292,7 +328,7 @@ footer {
 }
 
 #contact h3 {
-  font-size: 74px;
+  font-size: 5vw;
   border-bottom: 1px solid #fff;
   padding-bottom: 50px;
 }
@@ -321,18 +357,4 @@ footer {
 
 #contact .link ul li a:hover {
   color: #F53024;
-}
-
-/* script */
-.circle {
-  transition: all 0.2s ease-out;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: #F53024;
-  /* transform: translate((-50%, -50%)); */
-
 }

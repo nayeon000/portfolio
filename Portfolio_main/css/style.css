@@ -9,21 +9,11 @@ a {
   color: #2d2d2d;
 }
 
-/**** script ****/
-.circle {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: #F53024;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  will-change: transform;
-}
 
 
 /**** header ****/
 header {
+
   height: 100vh;
   width: 92vw;
   margin: 0 auto;
@@ -44,12 +34,12 @@ header h1 {
 @keyframes fadeInUp {
   0% {
     opacity: 0;
-    transform: translate3d(0, 20%, 0);
+    transform: translateY(10%);
   }
 
   to {
     opacity: 1;
-    transform: translateZ(0);
+    transform: translateY(-10%);
   }
 }
 
@@ -207,18 +197,22 @@ header nav ul li a:hover {
 
 .skill_gird h3 {
   font-weight: 700;
-  font-size: 28px;
+  font-size: 1.8rem;
   color: #f53024;
   margin-bottom: 50px;
 }
 
 .skill_gird ul li {
   margin-left: 20px;
-  font-size: 20px;
+  font-size: 1.2rem;
   font-family: Pretendard;
   font-weight: 500;
   list-style-type: disc;
   line-height: 1.8;
+}
+
+.skill_gird ul li::marker {
+  color: #ddd;
 }
 
 .skill_gird .box3,
@@ -228,6 +222,7 @@ header nav ul li a:hover {
 
 /****  Works ****/
 #works {
+  background-color: #000;
   padding-top: 10px;
 }
 
@@ -235,7 +230,7 @@ main #works {
   overflow: hidden;
   color: #fff;
   width: 100%;
-  background-color: #000;
+
 }
 
 main #works .title {
@@ -307,7 +302,6 @@ main #works .title {
 
 /* footer */
 footer {
-
   background-color: #000;
   color: #fff;
 }
@@ -340,8 +334,17 @@ footer {
   padding-bottom: 50px;
 }
 
+#contact .link {
+  display: flex;
+  justify-content: space-between;
+}
+
+#contact .smile {
+  padding-top: 80px;
+}
+
 #contact .link ul {
-  padding-top: 130px;
+  padding-top: 100px;
   display: flex;
   justify-content: flex-end;
   padding-bottom: 100px;
@@ -361,11 +364,39 @@ footer {
   border-bottom: 1px solid #fff;
 }
 
-#contact .link ul li img {
-  /* width: 10%; */
-  margin: 5px 0 0 5px;
-}
 
 #contact .link ul li a:hover {
   color: #F53024;
+}
+
+
+
+/**** script ****/
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #F53024;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  will-change: transform;
+}
+
+
+/* 페이드인 work */
+.sa {
+  /* background-color: rgba(0, 0, 0, 0.3); */
+  opacity: 0;
+  transition: all .8s ease;
+}
+
+.sa-up {
+  transform: translate(0, 100px);
+}
+
+.sa.show {
+  opacity: 1;
+  /* background-color: rgba(0, 0, 0, 1); */
+  transform: none;
 }

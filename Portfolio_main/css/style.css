@@ -21,9 +21,6 @@ a {
   will-change: transform;
 }
 
-body {
-  height: 100%;
-}
 
 /**** header ****/
 header {
@@ -310,11 +307,13 @@ main #works .title {
 
 /* footer */
 footer {
+
   background-color: #000;
   color: #fff;
 }
 
 #contact {
+  width: 90vw;
   margin: auto;
 }
 

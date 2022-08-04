@@ -9,11 +9,8 @@ a {
   color: #2d2d2d;
 }
 
-
-
 /**** header ****/
 header {
-
   height: 100vh;
   width: 92vw;
   margin: 0 auto;
@@ -60,14 +57,11 @@ header .hovering {
   right: 150px;
 }
 
-header nav li a {
-  margin-bottom: 25px;
-  display: block;
+header nav li {
+  width: 100px;
+  margin-bottom: 35px;
+  /* display: block; */
   font-size: 24px;
-}
-
-header nav ul li a:hover {
-  color: #F53024;
 }
 
 #header_bottom {
@@ -78,6 +72,11 @@ header nav ul li a:hover {
 
 #header_bottom .btn a img {
   width: 120%;
+  transition: .1s;
+}
+
+#header_bottom .btn a:hover img {
+  transform: translateY(10px);
 }
 
 #header_bottom .txt ul li {
@@ -114,9 +113,7 @@ header nav ul li a:hover {
   line-height: 1.8;
   margin-bottom: 100px;
   font-weight: bold;
-
 }
-
 
 #about .intro h2 span {
   color: #f53024;
@@ -319,6 +316,7 @@ footer {
 }
 
 #contact {
+  overflow: hidden;
   width: 90vw;
   margin: auto;
 }
@@ -352,7 +350,11 @@ footer {
 }
 
 #contact .smile {
+  position: sticky;
+  bottom: 10px;
   padding-top: 80px;
+  /* transform: translate(5%) translateY(5%); */
+  transform: translateX(calc(var(--mouse-x) * 0.02px)) translateY(calc(var(--mouse-y)*0.03px));
 }
 
 #contact .link ul {
@@ -372,7 +374,7 @@ footer {
 #contact .link ul li a {
   font-size: 24px;
   color: #fff;
-  display: block;
+  /* display: block; */
   border-bottom: 1px solid #fff;
 }
 
@@ -381,8 +383,6 @@ footer {
   color: #F53024;
 }
 
-
-
 /**** script ****/
 .circle {
   width: 20px;
@@ -390,11 +390,24 @@ footer {
   border-radius: 50%;
   background-color: #F53024;
   position: fixed;
-  top: 0px;
-  left: 0px;
+  top: -15px;
+  left: -23px;
+  /* transition: .1s; */
   will-change: transform;
 }
 
+.link-grow {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  /* transform: scale(5); */
+  background-color: transparent;
+  border: 2px solid #F53024;
+}
+
+.hovered-link {
+  color: #F53024;
+}
 
 /* 페이드인 work */
 .sa {

@@ -1,6 +1,6 @@
 // circle
 const circle = document.querySelector('.circle');
-
+const navLinks = document.querySelectorAll('li a');
 
 let mouseX = 0;
 let mouseY = 0;
@@ -24,10 +24,19 @@ function ani() {
 
 ani();
 
-
-// 스크롤시 한페이지식
-
-
+// 마우스 hover 됬을때 li a 
+navLinks.forEach((link) => {
+  link.addEventListener("mouseover", () => {
+    circle.classList.add("link-grow");
+    circle.style.zIndex = "-1";
+    link.classList.add("hovered-link");
+  });
+  link.addEventListener("mouseleave", () => {
+    circle.classList.remove("link-grow");
+    circle.style.zIndex = "1000";
+    link.classList.remove("hovered-link");
+  });
+});
 
 
 // 스크롤시 페이드인 work부분
@@ -46,3 +55,17 @@ const saFunc = function () {
 
 window.addEventListener('load', saFunc);
 window.addEventListener('scroll', saFunc);
+
+
+// smile
+
+// const link = document.querySelector(".link");
+// const smile = document.querySelector(".smile");
+
+var docStyle = document.documentElement.style;
+
+document.addEventListener('mousemove', function (e) {
+  docStyle.setProperty('--mouse-x', e.clientX);
+  docStyle.setProperty('--mouse-y', e.clientY);
+});
+

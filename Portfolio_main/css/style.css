@@ -58,11 +58,16 @@ header .hovering {
 }
 
 header nav li {
-  width: 100px;
   margin-bottom: 35px;
   /* display: block; */
   font-size: 24px;
 }
+
+/* header nav li a {
+  display: block;
+  width: 150px;
+  height: 20px;
+} */
 
 #header_bottom {
   display: flex;
@@ -72,11 +77,6 @@ header nav li {
 
 #header_bottom .btn a img {
   width: 120%;
-  transition: .1s;
-}
-
-#header_bottom .btn a:hover img {
-  transform: translateY(10px);
 }
 
 #header_bottom .txt ul li {
@@ -403,6 +403,7 @@ footer {
   /* transform: scale(5); */
   background-color: transparent;
   border: 2px solid #F53024;
+
 }
 
 .hovered-link {
@@ -424,4 +425,19 @@ footer {
   opacity: 1;
   /* background-color: rgba(0, 0, 0, 1); */
   transform: none;
+}
+
+.btns {
+  animation: motion 0.4s linear 0s infinite alternate;
+  margin-top: 0;
+}
+
+@keyframes motion {
+  0% {
+    margin-top: 0px;
+  }
+
+  100% {
+    margin-top: 10px;
+  }
 }

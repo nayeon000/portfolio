@@ -12,9 +12,14 @@
     rel="stylesheet">
   <title>랑콤</title>
   <link rel="stylesheet" href="css/reset.css">
+
+  <!-- css -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" media="(min-width:768px)" href="css/tablet.css">
   <link rel="stylesheet" media="(min-width:1400px)" href="css/pc.css">
+
+  <script src="./script/jquery-3.6.0.min.js"></script>
+  <script src="./script/jquery.mb.YTPlayer.min.js"></script>
 </head>
 
 <body>
@@ -144,12 +149,10 @@
     </section>
 
     <!-- video -->
-    <section id="video">
-      <h2 class="title"> Lancome video</h2>
-      <iframe width="1000" height="563" src="https://www.youtube.com/embed/laa2tauEfH0?autoplay=1&mute=1&loop=1"
-        title="[랑콤] 수지의 맑고 투명한 피부 비결 '클라리피끄 듀얼 에센스'" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; autoplay; picture-in-picture"
-        allowfullscreen></iframe>
+    <section id="video_wrapper">
+      <div id="video" class="player" data-property="{videoURL:'https://youtu.be/UG9s8CInG3Y',
+    containment:'#video_wrapper',autoPlay:true, mute:true, startAt:0, opacity:1, showControls: false}
+    "></div>
     </section>
 
     <!-- product -->
@@ -250,6 +253,8 @@
   <a href="#" class="Up">위로</a>
 
   <a href="#" class="kakao">톡상담</a>
+
+  <script src="./script/main.js"></script>
 </body>
 
 </html>

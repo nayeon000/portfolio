@@ -40,7 +40,7 @@ navLinks.forEach((link) => {
 
 
 // 스크롤시 페이드인 work부분
-const saTriggerMargin = 200;
+const saTriggerMargin = 250;
 const saElementList = document.querySelectorAll('.sa');
 
 const saFunc = function () {

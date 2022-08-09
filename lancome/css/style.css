@@ -104,61 +104,64 @@ nav #menu_bar a img {
 }
 
 /* ---- banner ---- */
-
-header {
+/* swiper 크기 조절 */
+#my_style {
+  width: 90vw;
   margin: auto;
-  background: url(../images/banner.png) no-repeat 17% 0;
-  height: 600px;
+  height: 550px;
+  --swiper-pagination-color: yellow;
+  --swiper-theme-color: #fff;
+  /* 페이지내이션 버튼 크기 */
+  --swiper-pagination-bullet-size: 10%
+}
+
+#my_style .swiper-wrapper li {
+  box-sizing: border-box;
+  background: no-repeat 12% / cover;
+  padding: 50px 60px;
+}
+
+/* 텍스트 */
+
+#my_style .swiper-wrapper .text {
+  margin: 200px auto 0;
+  line-height: 1.4;
+  max-width: 500px;
+}
+
+#my_style .swiper-wrapper .text p {
   text-align: center;
-  width: 75vw;
-  padding: 30px;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  text-align: center;
-}
-
-header .slide .left {
-  position: absolute;
-  top: 350px;
-  left: 0;
-  width: 40px;
-  height: 40px;
-  background-color: rgba(0, 0, 0, .5);
-  border-radius: 5%;
-}
-
-header .slide .right {
-  position: absolute;
-  top: 350px;
-  right: 0;
-  width: 40px;
-  height: 40px;
-  background-color: rgba(0, 0, 0, .5);
-  border-radius: 5%;
-}
-
-header .txt {
-  margin-top: 220px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-header p {
   font-size: 17px;
   margin: 50px 0 24px;
   letter-spacing: 5px;
+  color: #fff;
 }
 
-header h2 {
+#my_style .swiper-wrapper .text h2 {
+  text-align: center;
   margin-bottom: 200px;
   font-weight: 700;
-  font-size: 42px;
+  font-size: 38px;
   font-family: 'Jost', sans-serif;
+  color: #fff;
+}
+
+#my_style .swiper-pagination {
+  padding-bottom: 20px;
+  color: #fff;
+}
+
+/* 이미지 */
+#my_style .swiper-wrapper #bg1 {
+  background-image: url(../images/banner.png);
+}
+
+#my_style .swiper-wrapper #bg2 {
+  background-image: url(../images/banner.png);
+}
+
+#my_style .swiper-wrapper #bg3 {
+  background-image: url(../images/banner.png);
 }
 
 /*********** content ************/
@@ -178,7 +181,6 @@ header h2 {
 
 #content ul li .txt {
   padding: 30px;
-
 }
 
 #content ul li h3 {
@@ -502,3 +504,5 @@ header h2 {
   margin-bottom: 16px;
   text-align: center;
 }
+
+/* script */

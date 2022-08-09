@@ -67,3 +67,15 @@ document.addEventListener('mousemove', function (e) {
   docStyle.setProperty('--mouse-y', e.clientY);
 });
 
+// video banner
+$(window).fadeThis();
+
+$(".img img").on("mouseover", function () {
+  $(".img img").animate({ marginTop: -5220 }, 13000, "linear");
+});
+
+$(".img img").on("mouseleave", function () {
+  $(".img img")
+    .stop()
+    .animate({ marginTop: 0 }, 1000, "linear");
+});

@@ -12,6 +12,7 @@
     rel="stylesheet">
   <title>랑콤</title>
   <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
 
   <!-- css -->
   <link rel="stylesheet" href="css/style.css">
@@ -20,6 +21,7 @@
 
   <script src="./script/jquery-3.6.0.min.js"></script>
   <script src="./script/jquery.mb.YTPlayer.min.js"></script>
+  <script src="./script/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -44,20 +46,42 @@
 
   <!-- header -->
   <header>
-    <div class="slide">
-      <a href="#" class="left"><img src="images/chevron_left_FILL0_wght400_GRAD0_opsz48.svg" alt="left"></a>
-      <a href="#" class="right"><img src="images/chevron_right_FILL0_wght400_GRAD0_opsz48.svg" alt="right"></a>
-    </div>
-    <div class="txt">
-      <P>LANCOME</P>
-      <h2>WELCOME TO <span>LANCOME</span></h2>
-      <h3>01 ------ 03</h3>
+    <div class="swiper" id="my_style">
+      <div class="parallax-bg" data-swiper-parallax="-23%"></div>
+      <!-- 이미지 wrapper -->
+      <ul class="swiper-wrapper">
+        <!-- 이미지 -->
+        <li class="swiper-slide" id="bg1">
+          <!-- data-swiper-parallax= "시간" -->
+          <div class="text" data-swiper-parallax="-150">
+            <P>LANCOME</P>
+            <h2>WELCOME TO <span>LANCOME</span></h2>
+          </div>
+        </li>
+        <li class="swiper-slide" id="bg2">
+          <div class="text" data-swiper-parallax="-150">
+            <P>LANCOME</P>
+            <h2>WELCOME TO <span>LANCOME</span></h2>
+          </div>
+        </li>
+        <li class="swiper-slide" id="bg3">
+          <div class="text" data-swiper-parallax="-150">
+            <P>LANCOME</P>
+            <h2>WELCOME TO <span>LANCOME</span></h2>
+          </div>
+        </li>
+      </ul>
+      <!-- 좌 우 클릭 버튼 -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <!-- 하단 pagination -->
+      <div class="swiper-pagination my_page"></div>
     </div>
   </header>
 
   <main>
     <!-- content -->
-    <section id="content">
+    <section id="content" class="sa sa-up">
       <ul>
         <li>
           <a href="#"><img src="images/lavie.png" alt=""></a>
@@ -95,7 +119,7 @@
     </section>
 
     <!-- poundation -->
-    <section id="poundation" class="box">
+    <section id="poundation" class="box sa sa-up">
       <div class="img"><a href="#"><img src="images/poundation.png" alt="poundation"></a></div>
       <div class="txt">
         <h2>TELNT IDOLE <span>ULTRA POUNDATION</span></h2>
@@ -116,7 +140,7 @@
     </section>
 
     <!-- banner -->
-    <section id="reward_banner">
+    <section id="reward_banner" class="sa sa-up">
       <h2>LANCOME REWARDS</h2>
       <p>랑콤 회원만의 특별하고 풍성한 혜택을 만나보세요!<Br>
         *회원가입 후 첫 구매시 전 제품 15% 할인 혜택*</p>
@@ -124,7 +148,7 @@
     </section>
 
     <!-- new product -->
-    <section id="new_product">
+    <section id="new_product" class="sa sa-up">
       <h2 class="title">New Product</h2>
       <div class="new1 box">
         <div class="img"><a href="#"><img src="images/clarifique.png" alt="clarifique"></a></div>
@@ -156,7 +180,7 @@
     </section>
 
     <!-- product -->
-    <section id="product">
+    <section id="product" class="sa sa-up">
       <h2 class="title">Product</h2>
       <ul>
         <li>
@@ -209,7 +233,7 @@
     </section>
 
     <!-- instagram -->
-    <section id="instagram">
+    <section id="instagram" class="sa sa-up">
       <h3>@instagram</h3>
       <ul>
         <li><a href="#"><img src="images/insta1.png" alt="insta1"></a></li>

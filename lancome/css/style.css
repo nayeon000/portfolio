@@ -25,28 +25,6 @@ a {
   text-align: center;
 }
 
-.circle {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-  text-indent: -999999px;
-}
-
-.circle .circles {
-  margin-right: 3px;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-}
-
-.circle .black {
-  background-color: rgb(175, 175, 175);
-}
-
-.circle .white {
-  background-color: #efefef;
-}
-
 /* .up, .kakao */
 .Up {
   overflow: hidden;
@@ -83,15 +61,20 @@ nav {
   position: fixed;
   width: 100%;
   height: 60px;
-  box-shadow: 0 0 3px #222;
+  box-shadow: 0 0 3px #888;
   display: flex;
   align-items: center;
   z-index: 1000;
+  transition: .4s;
 }
 
 nav h1 {
   margin-right: auto;
   margin-left: 30px;
+}
+
+nav h1 img {
+  max-width: 65%;
 }
 
 nav #gnb,
@@ -120,12 +103,13 @@ nav #menu_bar a img {
 #my_style {
   width: 85vw;
   margin: auto;
-  padding-top: 40px;
-  height: 530px;
+  padding-top: 30px;
+  height: 500px;
   --swiper-pagination-color: yellow;
   --swiper-theme-color: #fff;
   /* 페이지내이션 버튼 크기 */
-  --swiper-pagination-bullet-size: 5%;
+  /* --swiper-pagination-bullet-size: 5%; */
+  --swiper-navigation-size: 30px;
 }
 
 #my_style .swiper-wrapper li {
@@ -180,9 +164,6 @@ nav #menu_bar a img {
   background-image: url(../images/banner2.png);
 }
 
-#my_style .swiper-wrapper #bg3 {
-  background-image: url(../images/banner.png);
-}
 
 /*********** content ************/
 #content {
@@ -378,6 +359,7 @@ nav #menu_bar a img {
   width: 210px;
   height: 210px;
 }
+
 
 #product ul li img {
   width: 87%;

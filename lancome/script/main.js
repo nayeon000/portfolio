@@ -52,11 +52,11 @@ addEventListener('scroll', () => {
 
   if (scrollY > main.offsetTop) {
     nav.classList.add('style');
-    img.src = 'images/logo_2.png';
+    img.src = 'images/logo.png';
     menu.src = 'images/menuwhite.png';
   } else if (scrollY <= main.offsetTop) {
     nav.classList.remove('style');
-    img.src = 'images/logo.png';
+    img.src = 'images/logo1.png';
     menu.src = 'images/menu_FILL0_wght400_GRAD0_opsz48.svg';
   }
 })

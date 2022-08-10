@@ -32,20 +32,18 @@ nav #registry li a:hover {
   color: #d51b51;
 }
 
-
-
 #menu_bar {
   display: none;
 }
 
 /*********** banner ************/
 #my_style {
-  height: 700px;
+  height: 650px;
   padding-top: 60px;
 }
 
 #my_style .swiper-wrapper .text {
-  margin-top: 200px;
+  margin-top: 180px;
 }
 
 #my_style .swiper-wrapper .text p {
@@ -57,14 +55,18 @@ nav #registry li a:hover {
   letter-spacing: 5px;
 }
 
-
-
 #content ul li .txt p span,
 #content ul li .txt h3 span {
   display: inline;
 }
 
+#content ul li a img {
+  transition: all 0.2s linear;
+}
 
+#content ul li a:hover img {
+  transform: scale(1.1);
+}
 
 /*********** poundation , mascara ************/
 #poundation .txt h2,
@@ -160,7 +162,6 @@ nav #registry li a:hover {
   font-size: 18px;
 }
 
-
 #product ul li:nth-child(2),
 #product ul li:nth-child(3) {
   display: block;
@@ -169,6 +170,14 @@ nav #registry li a:hover {
 #product ul li .img {
   width: 330px;
   height: 330px;
+}
+
+#product ul li .img a img {
+  transition: all 0.2s linear;
+}
+
+#product ul li .img a:hover img {
+  transform: scale(1.1);
 }
 
 /*********** instagram ************/

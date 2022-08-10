@@ -67,7 +67,7 @@ document.addEventListener('mousemove', function (e) {
 $(window).fadeThis();
 
 $(".img img").on("mouseover", function () {
-  $(".img img").animate({ marginTop: -4688 }, 15000, "linear");
+  $(".img img").animate({ marginTop: -4688 }, 23000, "linear");
 });
 
 $(".img img").on("mouseleave", function () {

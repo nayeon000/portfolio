@@ -56,10 +56,6 @@ window.addEventListener('scroll', saFunc);
 
 
 // smile
-
-// const link = document.querySelector(".link");
-// const smile = document.querySelector(".smile");
-
 var docStyle = document.documentElement.style;
 
 document.addEventListener('mousemove', function (e) {
@@ -71,7 +67,7 @@ document.addEventListener('mousemove', function (e) {
 $(window).fadeThis();
 
 $(".img img").on("mouseover", function () {
-  $(".img img").animate({ marginTop: -5220 }, 13000, "linear");
+  $(".img img").animate({ marginTop: -4688 }, 10000, "linear");
 });
 
 $(".img img").on("mouseleave", function () {

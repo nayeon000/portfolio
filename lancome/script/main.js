@@ -1,7 +1,7 @@
 // 비디오
 $("#video").YTPlayer();
 
-//슬라이드
+// 배너 슬라이드
 const swiper1 = new Swiper('#my_style', {
   parallax: true,
   pagination: {
@@ -16,7 +16,7 @@ const swiper1 = new Swiper('#my_style', {
   },
   loop: true,//3->1
   autoplay: {
-    delay: 5000,
+    delay: 4000,
   },
 });
 
@@ -36,4 +36,28 @@ const saFunc = function () {
 
 window.addEventListener('load', saFunc);
 window.addEventListener('scroll', saFunc);
+
+
+// nav 변경
+const nav = document.querySelector('nav');
+const main = document.querySelector('main');
+const img = document.querySelector('nav img');
+const menu = document.querySelector('#menu_bar img')
+
+addEventListener('scroll', () => {
+  console.log('scrollTop:', document.documentElement.scrollTop);
+  console.log('pageYOffset:', pageYOffset);
+  console.log('scrollY:', scrollY);
+
+
+  if (scrollY > main.offsetTop) {
+    nav.classList.add('style');
+    img.src = 'images/logo_2.png';
+    menu.src = 'images/menuwhite.png';
+  } else if (scrollY <= main.offsetTop) {
+    nav.classList.remove('style');
+    img.src = 'images/logo.png';
+    menu.src = 'images/menu_FILL0_wght400_GRAD0_opsz48.svg';
+  }
+})
 

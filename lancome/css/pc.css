@@ -5,6 +5,7 @@
 }
 
 /* nav */
+
 nav #gnb {
   display: flex;
   margin-right: 250px;
@@ -31,6 +32,8 @@ nav #registry li a:hover {
   color: #d51b51;
 }
 
+
+
 #menu_bar {
   display: none;
 }
@@ -38,12 +41,29 @@ nav #registry li a:hover {
 /*********** banner ************/
 #my_style {
   height: 700px;
+  padding-top: 60px;
 }
+
+#my_style .swiper-wrapper .text {
+  margin-top: 200px;
+}
+
+#my_style .swiper-wrapper .text p {
+  font-size: 24px;
+}
+
+#my_style .swiper-wrapper .text h2 {
+  font-size: 48px;
+  letter-spacing: 5px;
+}
+
+
 
 #content ul li .txt p span,
 #content ul li .txt h3 span {
   display: inline;
 }
+
 
 
 /*********** poundation , mascara ************/
@@ -56,7 +76,6 @@ nav #registry li a:hover {
 #mascara .txt p {
   font-size: 20px;
 }
-
 
 /*********** new product ************/
 #poundation .txt h2 span,
@@ -112,6 +131,11 @@ nav #registry li a:hover {
 
 #reward_banner p {
   font-size: 20px;
+}
+
+#reward_banner a:hover {
+  color: #000;
+  background-color: #fff;
 }
 
 /*********** product ************/

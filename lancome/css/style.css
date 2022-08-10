@@ -99,6 +99,18 @@ nav #registry {
   display: none;
 }
 
+nav.style {
+  background-color: #000;
+}
+
+nav.style a {
+  color: #fff;
+}
+
+nav.style+main {
+  margin-top: 60px;
+}
+
 nav #menu_bar a img {
   width: 80%;
 }
@@ -106,13 +118,14 @@ nav #menu_bar a img {
 /* ---- banner ---- */
 /* swiper 크기 조절 */
 #my_style {
-  width: 90vw;
+  width: 85vw;
   margin: auto;
-  height: 550px;
+  padding-top: 40px;
+  height: 530px;
   --swiper-pagination-color: yellow;
   --swiper-theme-color: #fff;
   /* 페이지내이션 버튼 크기 */
-  --swiper-pagination-bullet-size: 10%
+  --swiper-pagination-bullet-size: 5%;
 }
 
 #my_style .swiper-wrapper li {
@@ -121,10 +134,13 @@ nav #menu_bar a img {
   padding: 50px 60px;
 }
 
-/* 텍스트 */
+#my_style .swiper-wrapper li:nth-child(3) {
+  background: no-repeat 80% / cover;
+}
 
+/* 텍스트 */
 #my_style .swiper-wrapper .text {
-  margin: 200px auto 0;
+  margin: 160px auto 0;
   line-height: 1.4;
   max-width: 500px;
 }
@@ -151,13 +167,17 @@ nav #menu_bar a img {
   color: #fff;
 }
 
+#my_style #bg2 a {
+  color: #fff;
+}
+
 /* 이미지 */
 #my_style .swiper-wrapper #bg1 {
   background-image: url(../images/banner.png);
 }
 
 #my_style .swiper-wrapper #bg2 {
-  background-image: url(../images/banner.png);
+  background-image: url(../images/banner2.png);
 }
 
 #my_style .swiper-wrapper #bg3 {
@@ -215,6 +235,7 @@ nav #menu_bar a img {
 
 #poundation,
 .new1 {
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -251,6 +272,7 @@ nav #menu_bar a img {
 /*********** mascara ************/
 #mascara,
 .new2 {
+  overflow: hidden;
   border-top: 1px solid #ddd;
   display: flex;
   flex-direction: column-reverse;
@@ -326,6 +348,7 @@ nav #menu_bar a img {
 
 /*********** product ************/
 #product {
+  overflow: hidden;
   margin-top: 150px;
   text-align: center;
 }

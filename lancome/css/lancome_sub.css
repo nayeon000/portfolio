@@ -37,9 +37,9 @@ header {
 }
 
 .img {
-  width: 70%;
+  width: 1200px;
   border-radius: 20px;
-  height: 70vh;
+  height: 600px;
   overflow: hidden;
   border: #000 solid 12px;
 }

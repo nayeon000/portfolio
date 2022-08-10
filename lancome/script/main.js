@@ -61,3 +61,12 @@ addEventListener('scroll', () => {
   }
 })
 
+// menu
+const toggleBtn = document.querySelector('#menu_bar');
+const navbar = document.querySelector('nav #gnb');
+
+toggleBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  navbar.classList.toggle('on')
+})
+

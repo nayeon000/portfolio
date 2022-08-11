@@ -53,20 +53,20 @@ addEventListener('scroll', () => {
   if (scrollY > main.offsetTop) {
     nav.classList.add('style');
     img.src = 'images/logo.png';
-    menu.src = 'images/menuwhite.png';
   } else if (scrollY <= main.offsetTop) {
     nav.classList.remove('style');
     img.src = 'images/logo1.png';
-    menu.src = 'images/menu_FILL0_wght400_GRAD0_opsz48.svg';
   }
 })
 
 // menu
-const toggleBtn = document.querySelector('#menu_bar');
-const navbar = document.querySelector('nav #gnb');
 
-toggleBtn.addEventListener('click', (e) => {
-  e.preventDefault();
-  navbar.classList.toggle('on')
-})
+const mq = matchMedia('(min-width:768px)');
+
+$('#menu_bar').on('click', () => {
+  $('#menu_bar').toggleClass('active');
+  $('.slide_menu').toggleClass('active');
+});
+
+
 

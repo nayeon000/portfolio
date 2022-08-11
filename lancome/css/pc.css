@@ -7,6 +7,8 @@
 /* nav */
 
 nav #gnb {
+  position: absolute;
+  left: 25%;
   display: flex;
   margin-right: 250px;
 }
@@ -15,11 +17,22 @@ nav #gnb li a {
   margin: 0 30px;
 }
 
+nav h1 {
+  background: none;
+  position: relative;
+}
+
+nav h1 a img {
+  display: block;
+}
+
 nav #gnb li a:hover {
   color: #d51b51;
 }
 
 nav #registry {
+  position: absolute;
+  right: 1%;
   display: flex;
   margin-right: 30px;
 }
@@ -33,6 +46,22 @@ nav #registry li a:hover {
 }
 
 #menu_bar {
+  display: none;
+}
+
+nav.style {
+  background-color: #000;
+}
+
+nav.style a {
+  color: #fff;
+}
+
+nav.style+main {
+  margin-top: 60px;
+}
+
+.slide_menu {
   display: none;
 }
 

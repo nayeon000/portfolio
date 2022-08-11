@@ -198,7 +198,7 @@ nav #registry {
 
 /* 텍스트 */
 #my_style .swiper-wrapper .text {
-  margin: 160px auto 0;
+  margin: 125px auto 0;
   line-height: 1.4;
   max-width: 500px;
 }
@@ -237,7 +237,6 @@ nav #registry {
 #my_style .swiper-wrapper #bg2 {
   background-image: url(../images/banner2.png);
 }
-
 
 /*********** content ************/
 #content {

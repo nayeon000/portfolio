@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+body {
+  background: url(../images/noise_bg.png);
+  font-family: Pretendard;
+  color: #0a0a0a;
+  text-align: center;
+}
+
+a {
+  color: #0a0a0a;
+}
+
+header {
+  width: 100%;
+  height: 167px;
+  position: relative;
+}
+
+header nav ul {
+  display: flex;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  margin: 40px;
+}
+
+header nav ul li {
+  position: relative;
+  margin-right: 76px;
+}
+
+header nav ul li::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 10px);
+  width: 56px;
+  border-top: 1px solid #000;
+}
+
+header nav ul li a {
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 0 20px;
+}
+
+header nav ul li .mark {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  top: 2px;
+  right: 12px;
+  background-color: #0a0a0a;
+}
+
+/* header nav .btn p {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  font-size: 20px;
+} */
+#view h1 {
+  font-size: 140px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+#view .txt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+#view span {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.5;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #0a0a0a;
+  margin-bottom: 20px;
+}
+
+main {
+  text-align: center;
+}
+
+main h2 {
+  font-size: 82px;
+  font-weight: 600;
+  line-height: 102px;
+  margin-bottom: 30px;
+}
+
+#intro {}
+
+#intro .txt {}
+
+#intro .txt h3 {
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 58px;
+}
+
+#intro .txt h2 {}
+
+#intro .txt p {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+#intro .txt_info h3 {
+  font-size: 42px;
+  font-weight: 600;
+  margin: 40px 0;
+}

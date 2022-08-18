@@ -37,3 +37,56 @@ function typing() {
 
 setInterval(typing, 300);
 
+// 스크롤시 페이드인 
+const saTriggerMargin = 250;
+const saElementList = document.querySelectorAll('.sa');
+
+const saFunc = function () {
+  for (const element of saElementList) {
+    if (!element.classList.contains('show')) {
+      if (window.innerHeight > element.getBoundingClientRect().top + saTriggerMargin) {
+        element.classList.add('show');
+      }
+    }
+  }
+}
+
+window.addEventListener('load', saFunc);
+window.addEventListener('scroll', saFunc);
+
+$('.slide_item').eq(0).addClass('active');
+
+let current = 0;
+let total = $('.slide_item').length;
+
+
+let auto = () => {
+  let next = current;
+  current = current + 1;
+  slide(next, current);
+}
+$('#next').on('click', auto);
+
+$('#prev').on('click', () => {
+  let prev = current;
+  current = current - 1;
+  slide(prev, current)
+})
+
+function slide(item, idx) {
+  let num = current;
+
+  if (idx > total - 1) {
+    num = 0;
+    current = 0;
+  } else if (idx < 0) {
+    num = total - 1;
+    current = total - 1;
+  }
+
+  $('.slide_item').removeClass('active');
+  $('.slide_item').eq(num).addClass('active')
+}
+
+setInterval(auto, 8000)
+

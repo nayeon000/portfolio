@@ -33,6 +33,7 @@ header nav ul {
 header nav ul li {
   position: relative;
   margin-right: 76px;
+  transition: transform .5s ease;
 }
 
 header nav ul li::after {
@@ -51,6 +52,7 @@ header nav ul li a {
   line-height: 1.5;
   padding: 0 20px;
 }
+
 
 header nav ul li .mark {
   position: absolute;
@@ -307,24 +309,29 @@ main p {
 }
 
 /* place */
-
-#place .txt {
-  margin-bottom: 105px;
+#place {
+  margin-top: 180px;
 }
 
-#place .wrapper {
-  display: flex;
-}
-
-#place .box {
-  margin: 0 auto;
+.after {
   width: 995px;
   height: 679px;
-  border: 1px solid #0a0a0a;
+  margin: 0 auto;
   position: relative;
 }
 
-#place .box::after {
+.slide_wrapper {
+  width: 995px;
+  height: 679px;
+  background-color: #fff;
+  border: 1px solid #0a0a0a;
+  margin: 50px auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.after::after {
+  z-index: 100;
   content: "";
   position: absolute;
   top: 1rem;
@@ -335,59 +342,117 @@ main p {
   border-bottom: 1px solid #0a0a0a;
 }
 
-#place .img {
-  width: 994px;
-  height: 520px;
-}
-
-#place .box .img img {
-  width: 100%;
-}
-
-#place .box .txt {
-  width: 994px;
-  height: 158px;
-  text-align: left;
-  padding: 30px;
-  position: relative;
-}
-
-#place .box .txt p {
-  font-size: 17px;
-}
-
-#place .box .btn {
+/* 좌우 버튼 */
+.slide_wrapper .buttons {
   position: absolute;
-  bottom: 80px;
-  right: 60px;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  background-color: #fff;
   display: flex;
 }
 
-#place .box .btn span a img {
-  display: block;
+.slide_wrapper .buttons .btn {
   cursor: pointer;
-  width: 40px;
-  height: 40px;
+  padding: 12px;
+  position: relative;
 }
 
-#place .box .btn span:nth-child(1) img {
+.slide_wrapper .buttons .btn:nth-child(1) {
   transform: rotate(270deg);
 }
 
-#place .box .btn span:nth-child(3) img {
+.slide_wrapper .buttons .btn:nth-child(2) {
   transform: rotate(90deg);
 }
 
-#place .box .btn p {
-  font-size: 18px;
-  padding-right: 6px;
-  font-weight: 400;
+.slide_wrapper .buttons .btn:first-child::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  margin-top: -8px;
+  right: 0;
+  transform: rotate(90deg);
 }
 
-#place .box .btn p span {
-  font-weight: 700;
+/* 슬라이드 박스 */
+.slide_wrapper .slide_item {
+  background-color: #fff;
+  align-items: center;
+  position: absolute;
 }
 
+.slide_wrapper .slide_item .slide_img {
+  width: 995px;
+  height: 520px;
+  background: no-repeat 50% / cover;
+  order: 2;
+  border-bottom: 1px solid #0a0a0a;
+  transform: translateX(100%);
+  transition: .8s ease-in-out;
+}
+
+.slide_wrapper .slide_box1 .slide_img {
+  background-image: url(../images/platz.png);
+}
+
+.slide_wrapper .slide_box2 .slide_img {
+  background-image: url(../images/platz2.jpeg);
+}
+
+.slide_wrapper .slide_box3 .slide_img {
+  background-image: url(../images/platzWork.jpeg);
+}
+
+.slide_wrapper .slide_box4 .slide_img {
+  background-image: url(../images/cafepoze.jpg);
+}
+
+
+.slide_wrapper .slide_item .text_box_wrapper {
+  text-align: left;
+  order: 1;
+  width: 100%;
+  padding: 40px;
+  height: 159px;
+}
+
+.slide_wrapper .slide_item .text_box_wrapper .text_box_inner p {
+  margin-bottom: 30px;
+  font-size: 17px;
+}
+
+.slide_wrapper .slide_item .text_box_wrapper .text_box_inner .text_btn {
+  color: #000;
+  border-bottom: 1px solid #000;
+  letter-spacing: 2px;
+}
+
+.slide_wrapper .slide_item .text_box_wrapper .move {
+  transform: translateX(100%);
+  transition: .8s ease-in-out;
+  opacity: 0;
+}
+
+
+/* .active */
+.slide_item.active {
+  visibility: visible;
+  z-index: 10;
+}
+
+.slide_item.active .text_box_wrapper .text_box_inner p,
+.slide_item.active .text_box_wrapper .text_box_inner .text_btn {
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.slide_item.active .slide_img {
+  transform: translateX(0);
+}
+
+/* footer */
 footer {
   height: 100px;
   border-top: 1px solid #aaa;
@@ -463,4 +528,29 @@ footer .sns .sns_icon ul li {
 
 .Up:hover {
   transform: translateY(-5px);
+}
+
+/* 페이드인 work */
+.sa {
+  opacity: 0;
+  transition: all 1.5s ease;
+}
+
+.sa-up {
+  transform: translate(0, 100px);
+}
+
+.sa.show {
+  opacity: 1;
+  transform: none;
+}
+
+@keyframes motion {
+  0% {
+    margin-top: 0px;
+  }
+
+  100% {
+    margin-top: 10px;
+  }
 }

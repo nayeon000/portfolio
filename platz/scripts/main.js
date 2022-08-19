@@ -54,6 +54,8 @@ const saFunc = function () {
 window.addEventListener('load', saFunc);
 window.addEventListener('scroll', saFunc);
 
+
+// place 슬라이드부분
 $('.slide_item').eq(0).addClass('active');
 
 let current = 0;
@@ -89,4 +91,27 @@ function slide(item, idx) {
 }
 
 setInterval(auto, 8000)
+
+// nav hover 부분
+let elements = document.querySelectorAll("header nav ul li a");
+
+elements.forEach(element => {
+  let innerText = element.innerText;
+  element.innerText = "";
+
+  let textContainer = document.createElement("div");
+  textContainer.classList.add("block");
+
+  for (let letter of innerText) {
+    let span = document.createElement("span");
+    span.innerText = letter.trim() === "" ? "\xa0" : letter;
+    span.classList.add("letter");
+    textContainer.appendChild(span);
+  }
+
+  element.appendChild(textContainer);
+  element.appendChild(textContainer.cloneNode(true));
+});
+
+
 

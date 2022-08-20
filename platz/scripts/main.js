@@ -90,8 +90,6 @@ function slide(item, idx) {
   $('.slide_item').eq(num).addClass('active')
 }
 
-setInterval(auto, 8000)
-
 // nav hover 부분
 let elements = document.querySelectorAll("header nav ul li a");
 

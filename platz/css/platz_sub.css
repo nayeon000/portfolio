@@ -27,8 +27,10 @@ nav ul li a {
   padding-right: 50px;
 }
 
+
+
 nav ul li a:hover {
-  color: #d51B51;
+  color: #f53024;
 }
 
 /* header */
@@ -90,7 +92,7 @@ main .title h2 {
 }
 
 main .title h2 span {
-  color: #D51B51;
+  color: rgb(255, 102, 14);
 }
 
 main .flex {
@@ -150,28 +152,22 @@ main .content {
   padding-bottom: 12px;
 }
 
-#design .content .typography_flex .jost {
+#design .content .typography_flex .Pretendard {
   margin-left: 20px;
   margin-right: 80px;
-  font-family: 'Jost', sans-serif;
+  font-family: Pretendard;
 }
 
-#design .content .typography_flex .noto_sans {
-  font-family: 'Noto Sans KR', sans-serif;
-}
 
-#design .content .jost p:first-child,
-#design .content .noto_sans p:first-child {
+#design .content .Pretendard p:first-child {
   font-weight: 400;
 }
 
-#design .content .jost p:nth-child(2),
-#design .content .noto_sans p:nth-child(2) {
+#design .content .Pretendard p:nth-child(2) {
   font-weight: 500;
 }
 
-#design .content .jost p:nth-child(3),
-#design .content .noto_sans p:nth-child(3) {
+#design .content .Pretendard p:nth-child(3) {
   font-weight: 600;
 }
 
@@ -198,10 +194,6 @@ main .content {
 
 #design .color ul li:nth-child(2) {
   background-color: #f7f3f3;
-}
-
-#design .color ul li:nth-child(3) {
-  background-color: #d51B51;
 }
 
 #design h3 {
@@ -244,7 +236,7 @@ main .content {
 #review .content ul li h3 {
   font-size: 24px;
   font-weight: 600;
-  color: #D51B51;
+  color: rgb(255, 102, 14);
   margin-bottom: 20px;
 }
 
@@ -257,10 +249,10 @@ main .content {
 /* btn  */
 #btn {
   margin: 0 auto;
-  border: 1px solid #D51B51;
+  border: 1px solid rgb(255, 102, 14);
   width: 310px;
   height: 98px;
-  background-color: #D51B51;
+  background-color: rgb(255, 102, 14);
   font-size: 35px;
   font-weight: bold;
   text-align: center;
@@ -270,11 +262,11 @@ main .content {
 #btn p a {
   display: block;
   background-color: #fff;
-  color: #D51B51;
+  color: rgb(255, 102, 14);
 }
 
 #btn p a:hover {
-  background-color: #D51B51;
+  background-color: rgb(255, 102, 14);
   color: #fff;
 }
 
@@ -309,7 +301,7 @@ main .content {
 
 #contact h2 span {
   font-family: Pretendard;
-  color: #F53024;
+  color: rgb(4, 66, 201);
 }
 
 #contact .email {
@@ -358,7 +350,7 @@ main .content {
 }
 
 #contact .link ul li a:hover {
-  color: #D51B51;
+  color: #F53024;
 }
 
 /* script */
@@ -378,7 +370,8 @@ main .content {
   height: 35px;
   border-radius: 50%;
   background-color: transparent;
-  border: 2px solid #F53024;
+  border: 2px solid #f53024;
+  ;
   z-index: 1000;
 }
 

@@ -14,8 +14,6 @@ let conHt = container.style.height = `${calcHeight(horizontal)}px`;
 console.log(conHt);
 
 addEventListener('scroll', () => {
-  console.log('ho', horizontal.offsetTop);
-  console.log('st', stickyBox.offsetTop);
   horizontal.style.transform = `translateX(-${stickyBox.offsetTop}px)`;
 })
 
@@ -112,4 +110,7 @@ elements.forEach(element => {
 });
 
 
+
+
+//
 

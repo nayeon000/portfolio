@@ -57,6 +57,9 @@ a {
   }
 }
 
+.background {
+  height: 100vh;
+}
 
 /* header */
 header {
@@ -144,7 +147,7 @@ header .btn {
 /* view */
 #view {
   z-index: 10000;
-  margin-bottom: 350px;
+  /* padding-bottom: 250px; */
 }
 
 .text_box {
@@ -195,7 +198,7 @@ header .btn {
   left: 50%;
   transform: translateX(-50%);
   background-color: #0a0a0a;
-  bottom: -10px;
+  bottom: -20px;
   width: 1px;
   height: 70px;
   z-index: 9999;
@@ -207,7 +210,7 @@ header .btn {
   width: 9px;
   height: 9px;
   border-radius: 50%;
-  bottom: -10px;
+  bottom: -15px;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -232,17 +235,20 @@ main p {
 }
 
 /* intro */
+#intro {
+  margin-top: 150px;
+}
 
 #intro .txt h3 {
   font-size: 42px;
   font-weight: 400;
-  /* line-height: 58px; */
+
 }
 
 #intro .txt_info h3 {
   font-size: 42px;
   font-weight: 600;
-  /* margin: 30px 0; */
+
 }
 
 .flow-text {

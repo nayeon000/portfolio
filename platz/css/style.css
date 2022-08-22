@@ -140,6 +140,7 @@ header .btn {
   padding: 40px 40px 0 0;
 }
 
+
 /* view */
 #view {
   z-index: 10000;
@@ -189,6 +190,30 @@ header .btn {
   margin-bottom: 20px;
 }
 
+#view .mark {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #0a0a0a;
+  bottom: 50px;
+  width: 1px;
+  height: 70px;
+  z-index: 9999;
+  margin-bottom: 20px;
+}
+
+#view .mark::after {
+  content: "";
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  bottom: -20px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #0a0a0a;
+}
+
 /* main */
 main {
   text-align: center;
@@ -221,7 +246,7 @@ main p {
 }
 
 .flow-text {
-  margin-top: 100px;
+  margin-top: 80px;
   display: flex;
   flex: 0 0 auto;
   white-space: nowrap;
@@ -387,6 +412,7 @@ main p {
   text-align: left;
 }
 
+
 /* place */
 #place {
   margin-top: 180px;
@@ -433,8 +459,12 @@ main p {
 
 .slide_wrapper .buttons .btn {
   cursor: pointer;
-  padding: 12px;
+  padding: 10px 2px;
   position: relative;
+}
+
+.slide_wrapper .buttons .btn img {
+  width: 80%;
 }
 
 .slide_wrapper .buttons .btn:nth-child(1) {
@@ -445,21 +475,13 @@ main p {
   transform: rotate(90deg);
 }
 
-.slide_wrapper .buttons .btn:first-child::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  margin-top: -8px;
-  right: 0;
-  transform: rotate(90deg);
-}
-
 /* 슬라이드 박스 */
 .slide_wrapper .slide_item {
   background-color: #fff;
   align-items: center;
   position: absolute;
 }
+
 
 .slide_wrapper .slide_item .slide_img {
   width: 995px;

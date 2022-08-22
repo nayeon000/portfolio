@@ -318,6 +318,7 @@ main p {
   font-size: 34px;
   font-weight: 500;
   position: relative;
+  animation: slideDash 1.5s 1 forwards linear;
 }
 
 .information .info ul .black {
@@ -325,13 +326,44 @@ main p {
   color: #fff;
 }
 
-.information .info .arrow:nth-child(1):hover {
-  background-color: lightgreen;
+.information .info .bg:nth-child(1) {
+  background: linear-gradient(40deg, #00ff22 0%,
+      #e5ff00 20%, #ff4800 40%, #00e1ff 60%,
+      #cbf800 80%, #00ffaa 100%);
+  background-size: 300% 100%;
+  animation: gradient 6s ease infinite;
 }
 
-.information .info .arrow:nth-child(3):hover:hover {
-  background-color: rgb(86, 235, 255);
+.information .info .bg:nth-child(2) {
+  background: linear-gradient(90deg, #ff5100 10%,
+      #e5ff00 20%, #00ff40 40%, #eeff00 60%,
+      #00e1ff 80%, #ff0080 100%);
+  background-size: 500% 100%;
+  animation: gradient 6s ease infinite;
 }
+
+.information .info .bg:nth-child(3) {
+  background: linear-gradient(40deg, #00ff22 0%,
+      #e5ff00 20%, #ff4800 40%, #00e1ff 60%,
+      #cbf800 80%, #00ffaa 100%);
+  background-size: 300% 100%;
+  animation: gradient 6s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 
 .information .info .arrow {
   padding: 22px 65px 22px 35px;
@@ -350,7 +382,7 @@ main p {
 }
 
 #project h2 {
-  margin-bottom: 150px;
+  margin-bottom: 50px;
 }
 
 #project .sticky_box {
@@ -360,6 +392,7 @@ main p {
 }
 
 #project .sticky_box .project_wrapper {
+
   position: absolute;
   display: flex;
   justify-content: flex-end;
@@ -372,6 +405,7 @@ main p {
 }
 
 #project .project_wrapper .box {
+  border-left: 1px dashed #0a0a0a;
   display: flex;
   /* justify-content: flex-end; */
   height: 100vh;
@@ -379,11 +413,12 @@ main p {
 }
 
 .project_wrapper .filed {
-  padding-left: 300px;
+  padding-left: 200px;
 }
 
 
 .project_wrapper .box h3 {
+  padding-left: 25px;
   text-align: right;
   padding-bottom: 25px;
   font-size: 4rem;
@@ -398,10 +433,11 @@ main p {
   text-align: left;
   flex-direction: column;
   justify-content: space-between;
+  width: 35vw;
 }
 
 .project_wrapper .box .txt h4 {
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   font-weight: 500;
   text-align: left;
   line-height: 1.5;
@@ -608,6 +644,16 @@ footer .sns {
 
 footer .sns .membership {
   padding-right: 10px;
+}
+
+footer .sns .membership a {
+  color: #0a0a0a;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+footer .sns .membership a:hover {
+  font-weight: 900;
 }
 
 footer .sns .sns_icon ul {

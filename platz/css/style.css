@@ -326,28 +326,29 @@ main p {
   color: #fff;
 }
 
-.information .info .bg:nth-child(1) {
-  background: linear-gradient(40deg, #00ff22 0%,
-      #e5ff00 20%, #ff4800 40%, #00e1ff 60%,
-      #cbf800 80%, #00ffaa 100%);
+.information .info ul .bg1 {
+  background: linear-gradient(90deg, #eeff00, #99f3ff, #ff0080);
   background-size: 300% 100%;
-  animation: gradient 6s ease infinite;
+  animation: gradient 10s linear infinite;
 }
 
-.information .info .bg:nth-child(2) {
-  background: linear-gradient(90deg, #ff5100 10%,
-      #e5ff00 20%, #00ff40 40%, #eeff00 60%,
-      #00e1ff 80%, #ff0080 100%);
+.information .info .bg2 {
+  background: linear-gradient(90deg, #97deff, #ffa6d8, #fff6a6);
   background-size: 500% 100%;
-  animation: gradient 6s ease infinite;
+  animation: gradient 7s linear infinite;
 }
 
-.information .info .bg:nth-child(3) {
-  background: linear-gradient(40deg, #00ff22 0%,
-      #e5ff00 20%, #ff4800 40%, #00e1ff 60%,
-      #cbf800 80%, #00ffaa 100%);
+
+.information .info .bg3 {
+  background: linear-gradient(45deg, #ffa993, #ffbe5c, #c4ff80);
   background-size: 300% 100%;
-  animation: gradient 6s ease infinite;
+  animation: gradient 4s ease-out infinite;
+}
+
+.information .info .bg4 {
+  background: linear-gradient(-45deg, #03a9f4, #fca7d7, #ffeb3b, #03a9f4);
+  background-size: 200% 100%;
+  animation: gradient s ease infinite;
 }
 
 @keyframes gradient {
@@ -363,6 +364,7 @@ main p {
     background-position: 0% 50%;
   }
 }
+
 
 
 .information .info .arrow {
@@ -413,12 +415,12 @@ main p {
 }
 
 .project_wrapper .filed {
-  padding-left: 200px;
+  padding-left: 150px;
 }
 
 
 .project_wrapper .box h3 {
-  padding-left: 25px;
+  padding: 0 28px 0 55px;
   text-align: right;
   padding-bottom: 25px;
   font-size: 4rem;
@@ -428,12 +430,12 @@ main p {
 
 
 .project_wrapper .box .txt {
-  padding-left: 20px;
+  padding: 0 60px 0 30px;
   display: flex;
   text-align: left;
   flex-direction: column;
   justify-content: space-between;
-  width: 35vw;
+  width: 32vw;
 }
 
 .project_wrapper .box .txt h4 {

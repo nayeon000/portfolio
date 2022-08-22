@@ -693,6 +693,14 @@ footer .sns .sns_icon ul li {
   transform: translate(0, 100px);
 }
 
+.sa-left {
+  transform: translateX(150px);
+}
+
+.sa-right {
+  transform: translateX(-150px);
+}
+
 .sa.show {
   opacity: 1;
   transform: none;

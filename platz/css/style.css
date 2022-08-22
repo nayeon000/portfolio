@@ -144,7 +144,7 @@ header .btn {
 /* view */
 #view {
   z-index: 10000;
-  margin-bottom: 250px;
+  margin-bottom: 350px;
 }
 
 .text_box {
@@ -195,7 +195,7 @@ header .btn {
   left: 50%;
   transform: translateX(-50%);
   background-color: #0a0a0a;
-  bottom: 50px;
+  bottom: -10px;
   width: 1px;
   height: 70px;
   z-index: 9999;

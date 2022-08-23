@@ -9,6 +9,12 @@ a {
   color: #2d2d2d;
 }
 
+::selection {
+  background-color: #f53024;
+  color: #fff;
+
+}
+
 /**** header ****/
 header {
   height: 100vh;

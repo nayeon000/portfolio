@@ -6,7 +6,6 @@ body {
   color: #0a0a0a;
   text-align: center;
   overflow-x: hidden;
-  z-index: 1000;
 }
 
 a {
@@ -68,7 +67,6 @@ header {
   position: relative;
   display: flex;
   justify-content: space-between;
-  z-index: 10000;
 }
 
 header nav ul {
@@ -145,10 +143,6 @@ header .btn {
 
 
 /* view */
-#view {
-  z-index: 10000;
-  /* padding-bottom: 250px; */
-}
 
 .text_box {
   margin: 80px 0 100px;
@@ -394,7 +388,6 @@ main p {
 }
 
 #project .sticky_box .project_wrapper {
-
   position: absolute;
   display: flex;
   justify-content: flex-end;
@@ -420,7 +413,7 @@ main p {
 
 
 .project_wrapper .box h3 {
-  padding: 0 28px 0 55px;
+  padding: 0 20px 0 80px;
   text-align: right;
   padding-bottom: 25px;
   font-size: 4rem;
@@ -430,7 +423,7 @@ main p {
 
 
 .project_wrapper .box .txt {
-  padding: 0 60px 0 30px;
+  padding: 0 60px 0 50px;
   display: flex;
   text-align: left;
   flex-direction: column;

@@ -37,7 +37,7 @@
       <h2>UI RENEWAL PROJECT</h2>
     </div>
     <div class="img">
-      <img src="./images/Web.png" alt="web">
+      <video src="./images/Platz.webm" autoplay="autoplay" muted="muted" loop></video>
     </div>
   </header>
   <!-- main -->
@@ -48,9 +48,11 @@
       </div>
       <div class="content">
         <h3>플라츠는 복합 문화 공간으로 전시나 프로젝트 정보를 알려주고 있습니다.</h3>
-        <p class="content_title">기존 웹사이트는 주로 이미지와 글로 문서형식으로 되어있습니다.</p>
-        <p> 동적인 화면을 구현하면 좋겠다 생각했고<br>
-          javascript와 jQuery를 이용한 동적인 화면을 구현시켜 정보를 전달하는 것이 목표였습니다. </p>
+        <p class="content_title">기존 웹사이트는 주로 이미지와 글로 구성된 정적인 웹 사이트였습니다.</p>
+        <p class="txt">
+          사람들의 흥미를 이끌도록 화려한 디자인으로 제작하고자 했습니다.
+          또한 javascript와 jQuery를 이용하여 동적인 화면을 구현시켜 정보를 전달하는 것을 목표로 하였습니다.
+        </p>
       </div>
     </section>
 
@@ -92,8 +94,9 @@
         <ul>
           <li>pc에서 사용자 접근성을 높이기 위한 마우스 오버 : hover 적용</li>
           <li>animation을 이용한 다양한 효과 및 동적인 화면 구현 </li>
+          <li>javascript를 이용한 text 타이핑 효과 구현</li>
           <li>javascript를 이용한 특정 위치에서 가로스크롤 구현</li>
-          <li>jQuery를 이용한 이미지 슬라이드 구현</li>
+          <li>jQuery / setInterval(); 를 이용한 자동 슬라이드 구현</li>
         </ul>
       </div>
     </section>
@@ -106,14 +109,26 @@
         <ul>
           <li>
             <h3># 처음 시도한 가로스크롤</h3>
-            <p>position:sticky와 javascript를 이용하여 특정 위치에서 가로 스크롤를 적용 시켜보았습니다. <br>
+            <p>
+              position:sticky와 javascript를 이용하여 특정 위치에서 가로 스크롤를 적용 시켜보았습니다. <br>
               다만 스크롤이 끝나고 다음 화면으로 넘어갈 때 매끄럽게 적용시키지 못한게 아쉬웠습니다. <br>
-              좀 더 javascript를 공부하고 수정이 필요할 것 같습니다.</p>
+            </p>
           </li>
           <li>
-            <h3># 다음번에는</h3>
-            <p>text 타이핑 효과, 이미지 슬라이드, 가로스크롤 등 구현시키기 위해 javascript, jQuery를 적용시켰습니다.<br>
-              하지만 적용시키는데 많은 이해와 시간이 들었습니다.</p>
+            <h3># 버튼이 눌리지 않음
+            </h3>
+            <p>슬라이드를 구현할때 버튼이 눌리지 않고 cusor:pointer; 도 적용되지 않아 당황스러웠습니다.
+              <br>버튼을 먼저 작성하여 우선순위가 밀리게 되었고, z-index 값으로 우선 순위를 변경하여 해결했습니다.
+            </p>
+          </li>
+          <li>
+            <h3># 자동 슬라이드
+            </h3>
+            <p>jQuery의 setInterval()을 이용하여 자동 슬라이드를 이미지와 글에 적용시켜주었습니다.
+              <br>하지만 버튼을 클릭시 자동슬라이드가 충돌하여 문제점이 있었습니다. 아직 해결하지 못했지만
+              조금 더 공부해서 수정이 필요할 것 같습니다.
+
+            </p>
           </li>
         </ul>
       </div>

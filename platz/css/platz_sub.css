@@ -61,17 +61,23 @@ header {
   margin-bottom: 80px;
 }
 
+
 .img {
   width: 1200px;
   border-radius: 20px;
-  height: 600px;
+  height: 580px;
   overflow: hidden;
   border: #000 solid 12px;
 }
 
+/* 
 .img img {
   width: 100%;
   text-align: center;
+} */
+.img video {
+  width: 100%;
+
 }
 
 /* main */
@@ -93,6 +99,10 @@ main .title h2 {
 
 main .title h2 span {
   color: rgb(255, 102, 14);
+}
+
+main .content .txt {
+  width: 35vw;
 }
 
 main .flex {
@@ -118,7 +128,7 @@ main .content {
 #overview .content p {
   font-size: 20px;
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 1.8;
 }
 
 #overview .content .content_title {

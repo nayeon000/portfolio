@@ -20,6 +20,12 @@ nav {
   font-family: 'Manrope', sans-serif;
   font-weight: 600;
   font-size: 22px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .home {
+  padding-left: 40px;
 }
 
 nav ul {

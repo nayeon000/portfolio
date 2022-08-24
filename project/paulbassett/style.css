@@ -59,9 +59,10 @@ header .intro {
 }
 
 header .txt {
-  width: 50vw;
+  width: 55vw;
   padding-left: 80px;
-  padding-top: 150px;
+  padding-top: 100px;
+  padding-right: 80px;
 }
 
 header .txt h2 header .img {
@@ -89,9 +90,14 @@ header .txt .margin {
   margin-bottom: 30px;
 }
 
+
 header .intro .img img {
-  width: 75%;
-  padding-left: 30px;
+  width: 85%;
+
+}
+
+header .intro .img {
+  margin-left: 100px;
 }
 
 /* main */

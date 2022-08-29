@@ -186,6 +186,10 @@ main .content {
   line-height: 2.5;
 }
 
+#prototype .title {
+  width: 60vw;
+}
+
 #prototype .title p {
   font-size: 22px;
   font-weight: 500;
@@ -239,6 +243,8 @@ main .content {
 
 #wrapper_color .content ul>li {
   list-style: none;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 #wrapper_color .content .list {
@@ -249,20 +255,15 @@ main .content {
   font-weight: 600;
 }
 
-#wrapper_color .content ul li {
-  font-weight: 400;
-  line-height: 1.5;
-}
-
-#wrapper_color .content ul>li>ul>li>span {
-  font-weight: 600;
-}
-
 #wrapper_color .content ul>li>ul>li {
   margin-top: 15px;
   font-weight: 400;
   line-height: 1.8;
   font-size: 20px;
+}
+
+#wrapper_color .content ul>li>ul>li>span {
+  font-weight: 600;
 }
 
 #wrapper_color .content ul>li>ul>.sub_title {
@@ -272,7 +273,6 @@ main .content {
 
 #wrapper_color .margin {
   margin-top: 250px;
-  margin-left: 100px;
 }
 
 #wrapper_color .video {
@@ -283,7 +283,7 @@ main .content {
   border: #000 solid 11px;
   position: relative;
   margin-top: 80px;
-  margin-left: 100px;
+  margin-left: 50px;
 }
 
 #wrapper_color video {

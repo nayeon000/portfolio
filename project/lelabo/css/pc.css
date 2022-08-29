@@ -1,0 +1,313 @@
+@charset "utf-8";
+
+/* .continer */
+.container {
+  border-left: 75px solid #fff;
+  border-right: 75px solid #fff;
+  z-index: 10000;
+  position: relative;
+}
+
+.container header .gnb {
+  height: 100vh;
+  width: 75px;
+  position: fixed;
+  top: 350px;
+  left: 30px;
+}
+
+.container header .gnb ul li {
+  writing-mode: vertical-rl;
+  padding-bottom: 20px;
+}
+
+.container header .gnb ul li a {
+  color: #000;
+}
+
+.container header nav .menu_bar {
+  position: fixed;
+  top: 450px;
+  right: 15px;
+}
+
+/* header */
+header nav {
+  height: 65px;
+  justify-content: center;
+}
+
+header nav .logo {
+  text-align: center;
+  padding-bottom: 15px;
+  margin-top: 12px;
+}
+
+header nav .logo a img {
+  width: 10%;
+  margin-top: 1px;
+}
+
+header .gnb {
+  display: block;
+}
+
+header .gnb ul li a {
+  font-size: 1.125rem;
+}
+
+header .gnb ul li a:hover {
+  color: #999;
+}
+
+#my_style .swiper-wrapper li {
+  box-sizing: border-box;
+  background: no-repeat 50% / cover;
+}
+
+header .menu {
+  margin-top: 40px;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  display: block;
+  position: sticky;
+  top: 60px;
+}
+
+header .menu ul {
+  display: flex;
+  justify-content: center;
+}
+
+header .menu ul li {
+  padding-left: 30px;
+  text-align: center;
+}
+
+header .menu ul li a {
+  display: block;
+  color: #000;
+  font-size: 1.125rem;
+}
+
+header .menu ul li a:hover {
+  color: #999;
+}
+
+.slide_menu {
+  display: none;
+}
+
+
+/* best */
+#best {
+  margin-top: 150px;
+}
+
+#best .txt li:nth-child(3),
+#best .txt li:nth-child(4) {
+  display: block;
+}
+
+#best .txt ul,
+#new .txt ul {
+  grid-template-columns: repeat(4, 25%);
+}
+
+.txt ul li {
+  padding: 1%;
+}
+
+/* new */
+#new .txt ul li {
+  margin-bottom: 50px;
+}
+
+#new .txt li:nth-child(7),
+#new .txt li:nth-child(8) {
+  display: block;
+}
+
+/* promotion */
+#promotion .product .txt ul li:nth-child(7),
+#promotion .product .txt ul li:nth-child(8) {
+  display: block;
+}
+
+#promotion {
+  display: flex;
+  position: relative;
+}
+
+#promotion .left {
+  width: 100%;
+  background: url(../images/promotion.jpg) no-repeat;
+  height: 94vh;
+  position: sticky;
+  top: 65px;
+}
+
+#promotion .left .title {
+  position: absolute;
+  top: -50px;
+  left: -10px;
+}
+
+#promotion .left img {
+  display: none;
+}
+
+#promotion .product .txt {
+  margin-left: 70px;
+}
+
+#promotion .product .txt ul {
+  grid-template-columns: 50% 50%;
+  margin-top: 100px;
+}
+
+#promotion .product .txt ul li {
+  margin-bottom: 30px;
+}
+
+/* lelabo */
+#lelabo .swiper {
+  display: none;
+}
+
+#lelabo {
+  margin-top: 200px;
+}
+
+#lelabo .wrapper {
+  display: block;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+}
+
+#lelabo .wrapper img {
+  width: 100%;
+}
+
+.lelabo {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  color: #fff;
+  text-align: left;
+  font-size: 16px;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.lelabo * {
+  box-sizing: border-box;
+  transition: all 0.45s ease;
+}
+
+.lelabo img {
+  vertical-align: top;
+  max-width: 100%;
+  backface-visibility: hidden;
+}
+
+.lelabo figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  align-items: center;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.lelabo h3,
+.lelabo h5 {
+  margin: 0;
+  opacity: 0;
+  letter-spacing: 1px;
+}
+
+.lelabo h3 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  transform: translateY(-100%);
+}
+
+.lelabo h5 {
+  width: 70%;
+  text-align: center;
+  line-height: 1.5;
+  transform: translateY(100%);
+}
+
+.lelabo a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.lelabo:hover>img,
+.lelabo.hover>img {
+  opacity: 0.1;
+}
+
+.lelabo:hover h3,
+.lelabo.hover h3,
+.lelabo:hover h5,
+.lelabo.hover h5 {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* footer */
+footer {
+  margin-top: 180px;
+}
+
+footer .wrapper {
+  display: flex;
+  border-top: 1px solid #ddd;
+  padding: 40px 0;
+}
+
+footer #company,
+footer #cs_wrapper,
+footer #return {
+  border-top: none;
+}
+
+footer #company {
+  order: 4;
+}
+
+footer #cs_wrapper .center h2,
+footer #cs_wrapper .account h2,
+footer #company h2,
+footer #return h2 {
+  font-size: 0.938rem;
+  font-weight: 600;
+}
+
+footer #cs_wrapper .account,
+footer #return {
+  padding-left: 150px;
+}
+
+footer #company {
+  padding-left: 300px;
+}
+
+footer #return {
+  display: block;
+}
+
+footer ul li {
+  font-size: 0.875rem;
+}

@@ -58,10 +58,6 @@ window.addEventListener('scroll', saFunc);
 
 
 // smile
-
-// const link = document.querySelector(".link");
-// const smile = document.querySelector(".smile");
-
 var docStyle = document.documentElement.style;
 
 document.addEventListener('mousemove', function (e) {

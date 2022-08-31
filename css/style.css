@@ -15,6 +15,16 @@ a {
 
 }
 
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+  height: 20%;
+  border-radius: 10px;
+  background-color: #F53024;
+}
+
 /**** header ****/
 header {
   height: 100vh;

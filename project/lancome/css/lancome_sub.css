@@ -13,6 +13,16 @@ a {
   color: #fff;
 }
 
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+  height: 20%;
+  border-radius: 10px;
+  background-color: #F53024;
+}
+
 /* nav */
 nav {
   line-height: 65px;
@@ -26,6 +36,10 @@ nav {
 
 nav .home {
   padding-left: 40px;
+}
+
+nav .home a:hover {
+  color: #F53024;
 }
 
 nav ul {

@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <!-- font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -12,6 +13,10 @@
     rel="stylesheet">
   <link rel="stylesheet" type="text/css"
     href='https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap"
+    rel="stylesheet">
   <title>lelabo 설명페이지</title>
   <!-- css -->
   <link rel="stylesheet" href="../../common/reset.css">
@@ -41,7 +46,7 @@
       <h2>RESPONSIVE UI RENEWAL PROJECT</h2>
     </div>
     <div class="img">
-      <img src="./images/lancome_video.png" alt="header_img">
+      <video src="./images/lelabo.webm" autoplay="autoplay" muted="muted" loop></video>
     </div>
   </header>
   <!-- main -->
@@ -52,8 +57,8 @@
       </div>
       <div class="content">
         <h3></h3>
-        <p class="content_title">최신 화장품 웹사이트 트렌드보다 랑콤 사이트가 올드하다고 느껴졌습니다.</p>
-        <p>랑콤의 고유한 분위기를 살리면서 트렌드를 반영하여 잘 표현하고자 했습니다.<br>
+        <p class="content_title">르라보는 향수브랜드 입니다. </p>
+        <p>상품을 잘 보여주기 위한 레이아웃으로 디자인하였습니다.<br>
           또한 디바이스 제약 없이 모두 사용 가능한 반응형 웹사이트를 제작하였습니다.</p>
       </div>
     </section>
@@ -68,27 +73,22 @@
           <ul>
             <li>black</li>
             <li>white</li>
-            <li>pink</li>
+            <li>gray</li>
           </ul>
         </div>
         <div class="typography">
           <h3>TYPOGRAPHY</h3>
           <div class="typography_flex">
-            <div class="jost">
-              <p>Jost</p>
-              <p>Jost</p>
-              <p>Jost</p>
-            </div>
-            <div class="noto_sans">
-              <p>Noto Sans KR</p>
-              <p>Noto Sans KR</p>
-              <p>Noto Sans KR</p>
+            <div class="font">
+              <p>Source Sans Pro</p>
+              <p>Source Sans Pro</p>
+              <p>Source Sans Pro</p>
             </div>
           </div>
         </div>
         <div class="keyword">
           <h3>KEYWORD</h3>
-          <p>#심플함 #트렌디함 #가독성</p>
+          <p>#심플함 #트렌디함 #레이아웃</p>
         </div>
       </div>
     </section>
@@ -99,13 +99,13 @@
       </div>
       <div class="content">
         <ul>
-          <li>뷰포트 : Pc 1920px / Tablet 1400px / Mobile 768px</li>
+          <li>뷰포트 : Pc 1920px / Mobile 768px</li>
           <li>반응형으로 제작하여 다양한 기기에서도 적응이 가능</li>
-          <li>flex와 grid를 이용한 웹페이지 레이아웃 제작/제어</li>
+          <li>flex를 이용한 웹페이지 레이아웃 제작/제어</li>
           <li>pc에서의 사용자 접근성을 높이기 위한 마우스 오버 : hover 적용</li>
-          <li>jQuery 플러그인을 이용한 비디오 삽입</li>
-          <li>javascript를 이용한 배너 이미지 슬라이드 구현</li>
-          <li>javascript를 이용한 모바일 DrowDown Menu 구현</li>
+          <li>javascript를 이용한 스크롤에 따른 nav 변화</li>
+          <li>jQuery를 이용한 모바일 DrowDown Menu 구현</li>
+          <li>swiper 플러그인을 이용한 이미지 스와이퍼 구현</li>
         </ul>
       </div>
     </section>
@@ -117,20 +117,18 @@
       <div class="content">
         <ul>
           <li>
-            <h3># 내 첫 프로젝트</h3>
-            <p>디자인부터 퍼블리싱까지 스스로 모든것을 구현한 첫 프로젝트였습니다. <br>
-              만족스러운 결과물이 나오진 못했지만 , 내가 보완해야 할 문제점들을 파악할 수 있어 배운점이 많았습니다.</p>
+            <h3># 이미지 화질</h3>
+            <p>기존 홈페이지에 있는 이미지를 사용하였다. 하지만 PC버전에서 깨지는 현상이 보여<br>
+              추후에 이미지를 찾아 수정이 필요할 것 같다.
+            </p>
           </li>
           <li>
-            <h3># 다양한 크기와 비율</h3>
-            <p>퍼블리싱을 할때 mobile, tablet, pc 에서 고려해야할 크기가 다 달라 적용시키기 어려웠습니다.<br>
-              gird를 통해 content를 정렬 시킨 후 가변 단위를 이용해 유연한 반응형 웹사이트를 만들었습니다. </p>
+            <h3># PC버전과 모바일버전</h3>
+            <p><br></p>
           </li>
           <li>
             <h3># 플러그인 사용</h3>
-            <p>처음에는 비디오 삽입을 iframe 방식으로 적용시켰습니다. 보안 문제로 jQueyr 플러그인을 사용했습니다.
-              <br>jQuery 플러그인 이용하여 영상을 깔끔하게 보여주고 컨트롤 바, 공유 등 불필요한 속성들을 제어할 수 있었습니다.
-            </p>
+            <p></p>
           </li>
         </ul>
       </div>
@@ -150,7 +148,7 @@
           <div class="Portfolio">Portfolio</div>
         </a>
         <a href="../platz/platz_sub.html">
-          <div class="Platz">Platz Web</div>
+          <div class="Platz">Doosan Web</div>
           <img src="./images/right.svg" alt="right">
         </a>
       </div>
@@ -159,7 +157,11 @@
         <h3>na98729@naver.com</h3>
       </div>
       <div class="link">
-        <div class="smile"><img src="images/smileBlack.png" alt="smile"></div>
+        <div class="smile">
+          <a href="./lelabo_sub.html">
+            <img src="images/smileBlack.png" alt="smile">
+          </a>
+        </div>
         <ul class="gnb">
           <li>
             <a href="https://www.instagram.com/n.yeone/" target='_blank'>Instagram</a>
